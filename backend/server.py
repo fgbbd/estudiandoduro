@@ -1,8 +1,9 @@
-from flask import Flask, redirect
 import json
 
+from flask import Flask, redirect
+
 app = Flask(__name__)
-PORT = 8000
+PORT = 10000
 
 @app.route('/')
 def home():
