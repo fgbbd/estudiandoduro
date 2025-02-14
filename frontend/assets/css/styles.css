@@ -12,3 +12,37 @@ h1 {
     font-family: 'Bungee', sans-serif;
     word-spacing: .3em;
 }
+
+#footer {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    gap: 10px; /* Espaciado entre los elementos */
+    padding-bottom: 1%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#footer a {
+    text-decoration: underline;
+    color: #a8bbfc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#footer a:hover {
+    text-decoration: none;
+}
+
+#github {
+    display: flex;
+    align-items: center; /* Asegura la alineación del logo con el texto */
+}
+
+#github img {
+    width: 26px; /* Tamaño del logo */
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+}
+
+#github:hover img {
+    filter: invert(40%);
+}
