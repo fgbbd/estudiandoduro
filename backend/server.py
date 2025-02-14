@@ -1,9 +1,10 @@
 import json
+import os
 
 from flask import Flask, redirect
 
 app = Flask(__name__)
-PORT = 10000
+PORT = int(os.environ.get("PORT", 10000))
 
 @app.route('/')
 def home():
@@ -27,4 +28,4 @@ def proxy(game_id):
     return 'Not Found', 404
 
 if __name__ == '__main__':
-    app.run(port=PORT, debug=True)
+    app.run(host='0.0.0.0', port=PORT, debug=True)
