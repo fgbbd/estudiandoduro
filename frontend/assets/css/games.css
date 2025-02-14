@@ -1,0 +1,83 @@
+body {
+    font-family: 'Bungee', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    height: 100vh;
+}
+
+/* Estilo para el contenedor del título y el botón */
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinea el contenido a la izquierda */
+    margin-top: 20px;
+    gap: 10px; /* Espacio entre el botón y el título */
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 2em;
+    color: #cdd6f4;
+    margin: 0; /* Elimina el margen por defecto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo para el contenedor del juego */
+#game-container {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 10px; /* Un pequeño espacio alrededor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el iframe */
+#game-container iframe {
+    width: 80%;
+    height: 100%;
+    border: none;
+    border-radius: 8px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    display: block;
+}
+
+/* Estilos para el botón "Volver a la página principal" */
+button {
+    width: 50px;
+    height: 50px;
+    background-color: #5c5c63;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 0; /* Ajusta la posición del botón */
+}
+
+button:hover {
+    background-color: #8c8c94; /* Un verde ligeramente más oscuro en hover */
+    transform: translateY(-2px); /* Un pequeño efecto de elevación */
+}
+
+button img {
+    width: 30px; /* Ajusta el tamaño de la imagen */
+    height: 30px;
+}
+
+/* Estilos generales del footer */
+#warning {
+    color: #767a81;
+    text-align: center;
+    padding: 2px 0; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}

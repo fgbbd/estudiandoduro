@@ -1,0 +1,80 @@
+a {
+    color: #cdd6f4;
+    text-decoration: none;
+    font-family: 'Bungee', sans-serif;
+}
+
+.games-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.games-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.game-item {
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.game-item:hover {
+    transform: scale(1.1);
+}
+
+.game-item img {
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+/* Media Queries para ajustar la cantidad de columnas en pantallas más pequeñas */
+@media (max-width: 1200px) {
+    .games-list {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 900px) {
+    .games-list {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    .games-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas muy pequeñas */
+    }
+}
+
+@media (max-width: 400px) {
+    .games-list {
+        grid-template-columns: 1fr; /* 1 columna en pantallas extra pequeñas */
+        padding: 20px; /* Reducir padding para pantallas más pequeñas */
+    }
+}
+
+#footer {
+    text-align: center;
+    padding-bottom: 1%;
+    font-family: 'Montserrat', sans-serif;
+}
+#footer a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    color: #a8bbfc;
+}
+
+#footer a:hover{
+    text-decoration: none;
+}
