@@ -6,7 +6,7 @@
 
 ## 🛠️ Tecnologías utilizadas
 - **Frontend:** HTML, CSS, JavaScript; Hosting en Netlify
-- **Backend:** 
+- **Backend:** Python; Hosting en Render
 
 ## 📥 Instalación y ejecución
 Si deseas ejecutar el proyecto localmente:
@@ -20,7 +20,7 @@ cd estudiandoduro
 
 # Abrir el archivo index.html en tu navegador
 ```
-
+<!-- 
 ## 🤝 Contribuciones
 ¡Las contribuciones son bienvenidas! Si quieres mejorar la plataforma, sigue estos pasos:
 1. Haz un **fork** del repositorio.
@@ -33,4 +33,4 @@ cd estudiandoduro
 Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
 
 ## 📩 Contacto
-Si tienes dudas o sugerencias, puedes abrir un **issue** en el repositorio o visitar la plataforma en [Estudiando Duro](https://estudiando-duro.netlify.app/).
+Si tienes dudas o sugerencias, puedes abrir un **issue** en el repositorio o visitar la plataforma en [Estudiando Duro](https://estudiando-duro.netlify.app/). -->
