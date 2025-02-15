@@ -11,13 +11,6 @@ a {
     padding: 50px;
 }
 
-.games-list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    padding: 50px;
-}
-
 .game-item {
     border: 2px solid #ddd;
     padding: 10px;
