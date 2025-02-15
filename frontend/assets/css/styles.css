@@ -23,13 +23,13 @@ h1 {
 }
 
 #footer a {
-    text-decoration: underline;
+    text-decoration: none;
     color: #a8bbfc;
     font-family: 'Montserrat', sans-serif;
 }
 
 #footer a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 #github {
