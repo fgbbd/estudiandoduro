@@ -29,7 +29,7 @@ games.forEach(game => {
         .replace('<!-- GAME_TITLE -->', game.name)
         .replace('replace_description', `Juega ${game.name} gratis desbloqueado. `)
         .replace('replace_keywords', `${game.name}, gratis, desbloqueado, juego, estudia duro`)
-        .replace('<!-- GAME_IFRAME -->', `<iframe src="https://estudiando-duro-backend.onrender.com/proxy/${game.dir}" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>`);
+        .replace('<!-- GAME_IFRAME -->', `<iframe src=${game.url} width="100%" height="600px" frameborder="0" scrolling="no"></iframe>`);
 
     fs.writeFileSync(`game/${game.dir}.html`, gameHtml);
     console.log(`✅ Generado: ${game.dir}.html`);
