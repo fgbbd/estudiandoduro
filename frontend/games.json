@@ -158,5 +158,10 @@
         "name": "Football Legends",
         "dir": "footbalegends",
         "url": "https://html5.gamedistribution.com/rvvASMiM/ecd138ae69cf4e92b5f5cdd328b6b62e/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.twoplayergames.org%2Fgame%2Ffootball-legends-2021"
+    },
+    {
+        "name": "Infinite Road (Por Joel)",
+        "dir": "infinite-road",
+        "url": "https://infinite-road.netlify.app"
     }
 ]
