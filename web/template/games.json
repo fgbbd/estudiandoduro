@@ -1,5 +1,10 @@
 [
     {
+        "name": "Drive Mad",
+        "dir": "drive_mad",
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/drive-mad/"
+    },
+    {
         "name": "Slope 2",
         "dir": "slope2",
         "url": "https://cdn.gh5t.com/games/slope2/"
@@ -22,7 +27,7 @@
     {
         "name": "Slope 3",
         "dir": "slope3",
-        "url": "https://games-online.io/game/Slope3/"
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/slope-3/"
     },
     {
         "name": "Geometry Dash",
@@ -37,22 +42,22 @@
     {
         "name": "Drift Hunters",
         "dir": "drift_hunters",
-        "url": "https://webglmath.github.io/drift-hunters/"
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/drift-hunters/"
     },
     {
         "name": "Survival Race",
         "dir": "survival_race",
-        "url": "https://gnhustgames.github.io/survival-race/"
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/survival-race/"
     },
     {
         "name": "BitLife",
         "dir": "bitlife",
-        "url": "https://gnhustgames.github.io/bitlife"
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/bitlife-life-simulator/"
     },
     {
         "name": "Granny",
         "dir": "granny",
-        "url": "https://gnhustgames.github.io/granny"
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/granny/"
     },
     {
         "name": "Granny 2",
@@ -60,29 +65,14 @@
         "url": "https://watchdocumentaries.com/wp-content/uploads/games/granny-2"
     },
     {
-        "name": "Fortnite",
-        "dir": "fortnite",
-        "url": "https://gnhustgames.github.io/fortnite"
-    },
-    {
-        "name": "DTA 9",
-        "dir": "dta9",
-        "url": "https://gnhustgames.github.io/dta9"
-    },
-    {
         "name": "Fireboy and Watergirl 3",
         "dir": "fireboy_watergirl3",
         "url": "https://gnhustgames.github.io/fireboy-watergirl-3"
     },
     {
-        "name": "Parkour Race",
-        "dir": "parkour_race",
-        "url": "https://gnhustgames.github.io/parkour-race"
-    },
-    {
-        "name": "Alien's Nest",
-        "dir": "alien_nest",
-        "url": "https://gnhustgames.github.io/aliens-nest"
+        "name": "Fortzone",
+        "dir": "fortzone",
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/fortzone-battle-royale/"
     },
     {
         "name": "Traffic Jam 3D",
@@ -157,11 +147,16 @@
     {
         "name": "Football Legends",
         "dir": "footbalegends",
-        "url": "https://html5.gamedistribution.com/rvvASMiM/ecd138ae69cf4e92b5f5cdd328b6b62e/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.twoplayergames.org%2Fgame%2Ffootball-legends-2021"
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/football-legends/"
     },
     {
         "name": "Infinite Road (Por Joel)",
         "dir": "infinite-road",
         "url": "https://infinite-road.netlify.app"
+    },
+    {
+        "name": "Worldle Unlimited",
+        "dir": "wordle",
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/wordle-unlimited/"
     }
 ]

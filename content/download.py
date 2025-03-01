@@ -99,14 +99,14 @@ def download_assets(url, dir_name):
 def build_data(json_path, url, dir):
     # 1. Descargar el json
     # Descargar el JSON
-    response = requests.get(urljoin(url, json_path), allow_redirects=False)
-    if response.status_code != 200:
-        print(f"Error descargando el JSON: {response.status_code}")
-        return
+    target_url = urljoin(url, f'Build/{json_path}')
+    print(target_url)
+    response = requests.get(target_url, allow_redirects=False)
+
     
     json_data = response.json()
     
-    with open(f'{dir}/{json_path}', 'w') as file:
+    with open(f'{dir}/Build/{json_path}', 'w') as file:
         json.dump(json_data, file, indent=4)
 
     # Obtener los URLs de los tres archivos desde el JSON
@@ -123,17 +123,17 @@ def build_data(json_path, url, dir):
 
     for filename in files:
         print(f"Descargando {filename}...")
-        file_response = requests.get(urljoin(url, filename), allow_redirects=False)
+        file_response = requests.get(urljoin(url, f'Build/{filename}'), allow_redirects=False)
         if file_response.status_code == 200:
-            with open(os.path.join(dir, filename), 'wb') as file:
+            with open(os.path.join(dir, 'Build', filename), 'wb') as file:
                 file.write(file_response.content)
             print(f"{filename} descargado correctamente.")
         else:
             print(f"Error descargando {filename}: {file_response.status_code}")
 
 if __name__ == "__main__":
-    input_url = 'https://cdn.gh5t.com/games/slope//'
-    dir_name = 'slope'
-    # download_assets(input_url, os.path.join('game', dir_name))
+    input_url = 'https://gnhustgames.github.io/parkour-race/'
+    dir_name = 'parkour_race'
+    download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
-    build_data('Build/slope.json', input_url, f'game/{dir_name}/')
+    # build_data('BitLife.json', input_url, f'game/{dir_name}/')
