@@ -28,26 +28,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
-// Redirect to proxy
-let iframe = document.getElementById("gameFrame");
-let isLoaded = false;
-
-// Detectar cuando carga el iframe
-iframe.onload = () => {
-    isLoaded = true;
-};
-
-// Extraer el nombre del juego desde la URL del navegador
-function getGameNameFromUrl() {
-    let pathParts = window.location.pathname.split("/"); 
-    return pathParts[pathParts.length - 1]; // Última parte de la URL
-}
-
-// Si no carga en 5 segundos, redirigir al proxy con el nombre del juego
-setTimeout(() => {
-    if (!isLoaded) {
-        let gameName = getGameNameFromUrl();
-        window.location.href = `https://estudiando-duro-backend.onrender.com/proxy/${gameName}`;
-    }
-}, 5000);
