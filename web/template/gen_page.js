@@ -11,8 +11,8 @@ const gameTemplate = fs.readFileSync('game.template.html', 'utf-8');
 let gameListHtml = '';
 
 games.forEach(game => {
-    const thumbPath = `assets/img/${game.dir}.webp`;
-    const gameLink = `game/${game.dir}.html`; // Ahora generamos archivos individuales
+    const thumbPath = `/assets/img/${game.dir}.webp`;
+    const gameLink = `/game/${game.dir}.html`; // Ahora generamos archivos individuales
 
     // Generar lista de juegos para el index
     gameListHtml += `
@@ -29,9 +29,9 @@ games.forEach(game => {
         .replace('<!-- GAME_TITLE -->', game.name)
         .replace('replace_description', `Juega ${game.name} gratis desbloqueado. `)
         .replace('replace_keywords', `${game.name}, gratis, desbloqueado, juego, estudia duro`)
-        .replace('<!-- GAME_IFRAME -->', `<iframe src=../content/game/${game.dir} width="100%" height="600px" frameborder="0" scrolling="no"></iframe>`);
+        .replace('<!-- GAME_IFRAME -->', `<iframe src=/content/game/${game.dir} width="100%" height="600px" frameborder="0" scrolling="no"></iframe>`);
 
-    fs.writeFileSync(`../game/${game.dir}.html`, gameHtml);
+    fs.writeFileSync(`/game/${game.dir}.html`, gameHtml);
     console.log(`✅ Generado: ${game.dir}.html`);
 });
 
