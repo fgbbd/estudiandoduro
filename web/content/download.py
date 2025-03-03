@@ -132,8 +132,8 @@ def build_data(json_path, url, dir):
             print(f"Error descargando {filename}: {file_response.status_code}")
 
 if __name__ == "__main__":
-    input_url = 'https://23azostore.github.io/s7/hover-racer-drive/'
-    dir_name = 'hoverracer'
+    input_url = 'https://madalinstuntcars2.io/game/'
+    dir_name = 'madalinstunt2'
     # download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
-    build_data('WebGL.json', input_url, f'game/{dir_name}/')
+    build_data('msc2.json', input_url, f'game/{dir_name}/')
