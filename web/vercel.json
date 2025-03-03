@@ -1,5 +1,5 @@
 {
     "redirects": [
-        { "source": "/(.*)", "destination": "/404", "statusCode": 404 }
+        { "source": "/404", "destination": "/404", "statusCode": 404 }
     ]
 }
