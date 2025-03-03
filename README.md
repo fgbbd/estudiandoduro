@@ -1,12 +1,11 @@
 # Estudiando Duro
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d3d1a988-eb4a-4666-bd62-ab5026121799/deploy-status)](https://app.netlify.com/sites/estudiando-duro/deploys)
+![Vercel Status](https://img.shields.io/website-up-down-green-red/http/estudiandoduro.vercel.app.svg?label=Estudiando%20Duro)
 
-**[Estudiando Duro](https://estudiando-duro.netlify.app/)** es una página de juegos gratuitos y sin anuncios para "estudiar duro". 
+**[Estudiando Duro](https://estudiandoduro.vercel.app/)** es una página de juegos gratuitos y sin anuncios para "estudiar duro". 
 
 ## 🛠️ Tecnologías
-- **Frontend:** HTML, CSS, JavaScript; Hosting en Netlify
-- **Backend:** Python; Hosting en Render
+- **Frontend:** HTML, CSS, JavaScript; Hosting en Vercel
 
 ## ❔ Cómo funciona
 Está página de juegos simplemente incrusta en forma de iframes juegos encontrados en internet. 
