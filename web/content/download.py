@@ -131,9 +131,42 @@ def build_data(json_path, url, dir):
         else:
             print(f"Error descargando {filename}: {file_response.status_code}")
 
+def download_images():
+    # Crear la carpeta si no existe
+    save_dir = 'game/eggycar/images'
+
+    # Leer las URLs desde el archivo
+    with open('urls.txt', 'r', encoding='utf-8') as file:
+        urls = file.read().strip().split(',')
+
+    for url in urls:
+        url = url.strip()  # Limpiar espacios extra
+        if not url:
+            continue  # Saltar líneas vacías
+
+        # Extraer el nombre del archivo de la URL
+        filename = os.path.basename(url)
+        save_path = os.path.join(save_dir, filename)
+
+        try:
+            # Descargar la imagen
+            response = requests.get(url, stream=True)
+            response.raise_for_status()  # Lanza error si la respuesta no es 200
+
+            # Guardar la imagen en el directorio especificado
+            with open(save_path, 'wb') as img_file:
+                for chunk in response.iter_content(1024):
+                    img_file.write(chunk)
+
+            print(f"✅ Descargado: {save_path}")
+
+        except requests.RequestException as e:
+            print(f"❌ Error al descargar {url}: {e}")
+
 if __name__ == "__main__":
-    input_url = 'https://madalinstuntcars2.io/game/'
-    dir_name = 'madalinstunt2'
+    input_url = 'https://watchdocumentaries.com/wp-content/uploads/games/eggy-car/'
+    dir_name = 'eggycar'
     # download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
-    build_data('msc2.json', input_url, f'game/{dir_name}/')
+    # build_data('death_run_wasm_v1.json', input_url, f'game/{dir_name}/')
+    download_images()
