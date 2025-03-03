@@ -3,6 +3,9 @@ const fs = require('fs');
 // Leer la lista de juegos
 const games = JSON.parse(fs.readFileSync('games.json', 'utf-8'));
 
+// Ordenar los juegos alfabéticamente
+games.sort((a, b) => a.name.localeCompare(b.name, 'es', { sensitivity: 'base' }));
+
 // Leer la plantilla de index
 const indexTemplate = fs.readFileSync('index.template.html', 'utf-8');
 // Leer la plantilla de página individual
