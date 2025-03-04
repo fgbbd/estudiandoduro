@@ -1,11 +1,6 @@
 {
     "redirects": [
-        { "source": "/404", "destination": "/404", "statusCode": 404 },
-        {
-          "source": "/game/:game.html",
-          "destination": "/game/:game",
-          "permanent": true
-        }
+        { "source": "/404", "destination": "/404", "statusCode": 404 }
     ],
     "rewrites": [
         {
