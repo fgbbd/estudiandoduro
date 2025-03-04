@@ -15,7 +15,7 @@ let gameListHtml = '';
 
 games.forEach(game => {
     const thumbPath = `/assets/img/${game.dir}.webp`;
-    const gameLink = `/game/${game.dir}`; // Ahora generamos archivos individuales
+    const gameLink = `/game/${game.dir}.html`; // Ahora generamos archivos individuales
 
     // Generar lista de juegos para el index
     gameListHtml += `
