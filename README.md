@@ -21,5 +21,7 @@ Si tienes dudas o sugerencias, puedes abrir un **[issue](https://github.com/fgbb
 Si quieres sugerir un juego también puedes usar [este formulario](https://tally.so/r/3yoBvW).
 
 ## TO-DO List
-- [ ] Buscador de juegos por nombre y categoróia
+- [ ] Buscador de juegos por nombre y categoría
 - [ ] Optimización de la página
+- [ ] Añadir juegos
+- [ ] Reedirigir a URL original en caso de 404
