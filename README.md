@@ -4,13 +4,6 @@
 
 **[Estudiando Duro](https://estudiandoduro.vercel.app/)** es una página de juegos gratuitos y sin anuncios para "estudiar duro". 
 
-## 🛠️ Tecnologías
-- **Frontend:** HTML, CSS, JavaScript; Hosting en Vercel
-
-## ❔ Cómo funciona
-Está página de juegos simplemente incrusta en forma de iframes juegos encontrados en internet. 
-
-El backend funciona como proxy para los links de estos juegos. 
 
 ## 📜 Licencia
 Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
@@ -27,3 +20,4 @@ Si quieres sugerir un juego también puedes usar [este formulario](https://tally
 - [ ] Reedirigir a URL original en caso de 404
 - [ ] Ver como hacer un proxy real
 - [ ] Hacer que funcione bien la pantalla completa
+- [ ] SEO
