@@ -25,3 +25,5 @@ Si quieres sugerir un juego también puedes usar [este formulario](https://tally
 - [ ] Optimización de la página
 - [ ] Añadir juegos
 - [ ] Reedirigir a URL original en caso de 404
+- [ ] Ver como hacer un proxy real
+- [ ] Hacer que funcione bien la pantalla completa

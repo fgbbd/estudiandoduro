@@ -143,5 +143,10 @@
         "name": "Worldle Unlimited",
         "dir": "wordle",
         "url": "https://watchdocumentaries.com/wp-content/uploads/games/wordle-unlimited/"
+    },
+    {
+        "name": "Kour.io",
+        "dir": "kour",
+        "url": "https://kour.org"
     }
 ]
