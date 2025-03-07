@@ -2,27 +2,32 @@
     {
         "name": "Drive Mad",
         "dir": "drive_mad",
-        "url": "https://watchdocumentaries.com/wp-content/uploads/games/drive-mad/"
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/drive-mad/",
+        "type": 1
     },
     {
         "name": "Slope 2",
         "dir": "slope2",
-        "url": "https://cdn.gh5t.com/games/slope2/"
+        "url": "https://cdn.gh5t.com/games/slope2/",
+        "type": 1
     },
     {   
         "name": "Slope",
         "dir": "slope",
-        "url": "https://cdn.gh5t.com/games/slope/"
+        "url": "https://cdn.gh5t.com/games/slope/",
+        "type": 1
     },
     {
         "name": "1v1.lol",
         "dir": "1v1",
-        "url": "https://sz-games.github.io/Games-2/lol/"
+        "url": "https://sz-games.github.io/Games-2/lol/",
+        "type": 1
     },
     {
         "name": "Happy Wheels",
         "dir": "happy_wheels",
-        "url": "https://games-online.io/game/HappyWheels/"
+        "url": "https://games-online.io/game/HappyWheels/",
+        "type": 1
     },
     {
         "name": "Slope 3",
@@ -135,7 +140,7 @@
         "url": "https://watchdocumentaries.com/wp-content/uploads/games/football-legends/"
     },
     {
-        "name": "Infinite Road (Por Joel)",
+        "name": "Infinite Road",
         "dir": "infinite-road",
         "url": "https://infinite-road.netlify.app"
     },

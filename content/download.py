@@ -164,9 +164,8 @@ def download_images():
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://watchdocumentaries.com/wp-content/uploads/games/eggy-car/'
-    dir_name = 'eggycar'
-    # download_assets(input_url, os.path.join('game', dir_name))
+    input_url = 'https://games-online.io/game/HappyWheels/'
+    dir_name = 'happy_wheels'
+    download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
     # build_data('death_run_wasm_v1.json', input_url, f'game/{dir_name}/')
-    download_images()
