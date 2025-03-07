@@ -1,12 +1,8 @@
 # Estudiando Duro
 
-![Vercel Status](https://img.shields.io/website-up-down-green-red/http/estudiandoduro.vercel.app.svg?label=Estudiando%20Duro)
+![The website is currently](https://img.shields.io/website-up-down-green-red/http/estudiandoduro.vercel.app.svg?label=Estudiando%20Duro)
 
 **[Estudiando Duro](https://estudiandoduro.vercel.app/)** es una página de juegos gratuitos y sin anuncios para "estudiar duro". 
-
-
-## 📜 Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
 
 ## 📩 Contacto
 Si tienes dudas o sugerencias, puedes abrir un **[issue](https://github.com/fgbbd/estudiandoduro/issues/new)**. 
