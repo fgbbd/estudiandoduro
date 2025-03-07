@@ -8,7 +8,7 @@ a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    padding: 50px;
+    padding: 10px;
 }
 
 .game-item {
@@ -62,5 +62,82 @@ a {
     }
 }
 
+/* Contenedor del buscador */
+#search-container {
+    position: relative; /* Asegura que el icono se posicione dentro de este contenedor */
+    width: 30%; /* Ajusta el ancho al del input */
+    margin: 20px auto;
+}
 
+/* Buscador */
+input {
+    background-color: #333347;
+    color: #cdd6f4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%; /* Asegura que el input ocupe todo el ancho del contenedor */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    outline: none;
+    height: 15px;
+}
+
+/* Efecto al enfocar */
+input:focus {
+    background-color: #44445a;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo de la cruz */
+#clear-icon {
+    position: absolute;
+    right: 15px; /* Se mantiene dentro del input */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #cdd6f4;
+    cursor: pointer;
+    display: none; /* Oculta la cruz por defecto */
+    padding: 7px; /* Aumenta el padding para el círculo */
+    border-radius: 50%; /* Hace que el fondo sea circular */
+}
+
+#clear-icon:hover {
+    color: #fff
+}
+
+/* Mostrar la cruz cuando el input tiene texto */
+input:not(:placeholder-shown) + #clear-icon {
+    display: block;
+}
+
+
+/* No match */
+#no-match {
+    background-color: #2a2a3c; /* Fondo oscuro, en tono complementario con los otros colores */
+    color: #cdd6f4; /* Color claro para el texto */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 2rem;
+}
+
+#no-match a {
+    text-decoration: underline;
+    color: #a8bbfc;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#no-match a:hover {
+    text-decoration: none;
+}
 
