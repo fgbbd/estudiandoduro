@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Evento para filtrar juegos mientras se escribe
     searchInput.addEventListener("input", () => {
-        const query = searchInput.value;
+        const query = searchInput.value.toLowerCase().trim();
         const matchingDirs = games
         .filter(game => {
             return game.name && game.name.toLowerCase().trim().includes(query); // Verificar si game.name existe
