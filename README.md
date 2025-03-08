@@ -13,10 +13,11 @@ Si quieres sugerir un juego también puedes usar [este formulario](https://tally
 - [x] Buscador de juegos por nombre y categoría
 - [ ] Añadir juegos; Unblocked games de dirft hunters; Camiones
 - [ ] Reedirigir a URL original en caso de 404; Página de 4040 diferentes para content/games
-- [ ] Happy Wheels
-- [ ] Ver como hacer un proxy real
+- [x] Happy Wheels
 - [ ] Hacer que funcione bien la pantalla completa
 - [ ] SEO
 - [ ] Ordenar por popularidad
 - [ ] Eliminar .html de los juegos
+- [ ] Filtro por categorías
 - [ ] Optimización de la página
+- [x] Hacer click en todo el game-item para a
