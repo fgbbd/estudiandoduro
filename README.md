@@ -10,9 +10,9 @@ Si tienes dudas o sugerencias, puedes abrir un **[issue](https://github.com/fgbb
 Si quieres sugerir un juego también puedes usar [este formulario](https://tally.so/r/3yoBvW).
 
 ## TO-DO List
-- [x] Buscador de juegos por nombre y categoría
+- [x] Buscador de juegos por nombre
 - [ ] Añadir juegos; Unblocked games de dirft hunters; Camiones
-- [ ] Reedirigir a URL original en caso de 404; Página de 4040 diferentes para content/games
+- [ ] Reedirigir a URL original en caso de 404; Página de 404 diferentes para content/games
 - [x] Happy Wheels
 - [ ] Hacer que funcione bien la pantalla completa
 - [ ] SEO
@@ -21,3 +21,4 @@ Si quieres sugerir un juego también puedes usar [este formulario](https://tally
 - [ ] Filtro por categorías
 - [ ] Optimización de la página
 - [x] Hacer click en todo el game-item para a
+- [ ] Arreglar Fortzone

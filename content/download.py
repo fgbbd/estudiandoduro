@@ -164,7 +164,7 @@ def download_images():
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://clusterrushonline.github.io/file/'
+    input_url = 'https://smdgames.github.io/mathgames66/7462e5fd-cbf3-4484-91ad-ad8574157409/content/w8.snokido.com/games/unity-webgl/cluster-rush/index.html'
     dir_name = 'cluster_rush'
     download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')

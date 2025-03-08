@@ -35,7 +35,7 @@ fs.writeFileSync('../index.html', finalIndexHtml);
 console.log('✅ index.html generado con éxito.');
 
 function create_game(game) {
-    let gameHtml = gameTemplate                
+    let gameHtml = gameTemplate
         .replace('<!-- GAME_TITLE -->', game.name)
         .replace('replace_description', `Juega ${game.name} gratis desbloqueado. `)
         .replace('replace_keywords', `${game.name}, gratis, desbloqueado, juego, estudia duro`)
@@ -43,20 +43,20 @@ function create_game(game) {
     switch (game.type) {
         case 1:
             gameHtml = gameHtml
-                .replace('<!-- GAME_IFRAME -->', 
+                .replace('<!-- GAME_IFRAME -->',
                     `<iframe src="/content/game/${game.dir}/" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>`);
             break;
-        
+
         case 2:
             gameHtml = gameHtml
-                .replace('<!-- GAME_IFRAME -->', 
+                .replace('<!-- GAME_IFRAME -->',
                     `<iframe src="${game.url}" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>`);
             break;
 
         case 3:
             gameHtml = gameHtml
-                .replace('<!-- GAME_IFRAME -->', 
-                    `<iframe src="${game.url}" width="100%" height="600px" frameborder="0" scrolling="no" 
+                .replace('<!-- GAME_IFRAME -->',
+                    `<iframe src="${game.url}" width="100%" height="600px" frameborder="0" scrolling="no"
                     onload="this.contentWindow.document.getElementById('listLink')?.remove();"></iframe>`);
             break;
     }
