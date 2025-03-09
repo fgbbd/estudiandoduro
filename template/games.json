@@ -182,5 +182,11 @@
         "dir": "kour",
         "url": "https://kour.org",
         "type": 2
+    },
+    {
+        "name": "Slope Multiplayer",
+        "dir": "slope_multiplayer",
+        "url": "https://f3.silvergames.com/m/slope-2-player/",
+        "type": 1
     }
 ]

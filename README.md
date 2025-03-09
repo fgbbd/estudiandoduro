@@ -11,8 +11,8 @@ Si quieres sugerir un juego también puedes usar [este formulario](https://tally
 
 ## TO-DO List
 - [x] Buscador de juegos por nombre
-- [ ] Añadir juegos; Unblocked games de dirft hunters; Camiones
-- [ ] Reedirigir a URL original en caso de 404; Página de 404 diferentes para content/games
+- [x] Añadir juegos; Unblocked games de dirft hunters; Camiones
+- [x] Reedirigir a URL original en caso de 404; Página de 404 diferentes para content/games
 - [x] Happy Wheels
 - [ ] Hacer que funcione bien la pantalla completa
 - [ ] SEO
