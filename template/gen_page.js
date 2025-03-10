@@ -23,8 +23,7 @@ games.forEach(game => {
         <a href="${gameLink}" class="game-item" id="${game.dir}">
             <img src="${thumbPath}" alt="${game.name}">
             <h3>${game.name}</h3>
-        </a>
-    `;
+        </a>`;
 
     create_game(game);
 });

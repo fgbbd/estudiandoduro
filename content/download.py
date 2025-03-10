@@ -10,12 +10,12 @@ def download_file(url, dir_name, base_url):
     try:
         response = requests.get(url, allow_redirects=False)
         response.raise_for_status()  # Raise an error for bad responses
-        
+
         # Obtener la ruta relativa a partir de la base_url
         parsed_url = urlparse(url)
         # Eliminar la parte del dominio de la URL
         relative_path = os.path.relpath(parsed_url.path, start=base_url)
-        
+
         # Crear la ruta completa dentro de dir_name
         file_path = os.path.join(dir_name, relative_path.lstrip('/'))  # Eliminar '/' inicial si existe
 
@@ -24,7 +24,7 @@ def download_file(url, dir_name, base_url):
 
         # Crear las carpetas necesarias
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
-        
+
         # Descargar el archivo y guardarlo
         with open(file_path, 'wb') as f:
             f.write(response.content)
@@ -37,7 +37,7 @@ def download_css_assets(css_url, dir_name, base_url):
     try:
         response = requests.get(css_url, allow_redirects=False)
         response.raise_for_status()
-        
+
         # Guardar el archivo CSS en la ruta relativa correcta
         parsed_url = urlparse(css_url)
         css_file_path = os.path.join(dir_name, os.path.relpath(parsed_url.path, start=base_url))
@@ -45,39 +45,39 @@ def download_css_assets(css_url, dir_name, base_url):
         with open(css_file_path, 'wb') as f:
             f.write(response.content)
         print(f"Downloaded CSS: {css_file_path}")
-        
+
         # Buscar todas las URL dentro del archivo CSS
         urls = re.findall(r'url\((["\']?)(.*?)\1\)', response.text)
         for _, asset_url in urls:
             asset_url = urljoin(css_url, asset_url.strip(' "\''))  # Resolver URL relativa
             download_file(asset_url, dir_name, base_url)
     except Exception as e:
-        print(f"Failed to download CSS assets from {css_url}: {e}")    
-    
+        print(f"Failed to download CSS assets from {css_url}: {e}")
+
 # Función para descargar todos los recursos de la página
 def download_assets(url, dir_name):
     try:
         response = requests.get(url, allow_redirects=False)
         response.raise_for_status()
-        
+
         # Crear el directorio principal para la página web
         os.makedirs(dir_name, exist_ok=True)
-        
+
         # Guardar el archivo HTML como 'index.html'
         html_file_path = os.path.join(dir_name, 'index.html')
         with open(html_file_path, 'wb') as f:
             f.write(response.content)
         print(f"Downloaded HTML: {html_file_path}")
-        
+
         # Analizar el HTML
         soup = BeautifulSoup(response.content, 'html.parser')
-        
+
         # Obtener la base_url para calcular rutas relativas
         base_url = urlparse(url).path
-        
+
         # Encontrar todos los enlaces a recursos (CSS, JS, Imágenes)
         asset_tags = soup.find_all(['link', 'script', 'img'])
-        
+
         # Descargar los archivos de recursos
         for tag in asset_tags:
             if tag.name == 'link' and tag.get('href'):
@@ -92,7 +92,7 @@ def download_assets(url, dir_name):
             elif tag.name == 'img' and tag.get('src'):
                 asset_url = urljoin(url, tag['src'])
                 download_file(asset_url, dir_name, base_url)
-        
+
     except Exception as e:
         print(f"Failed to download assets from {url}: {e}")
 
@@ -103,9 +103,9 @@ def build_data(json_path, url, dir):
     print(target_url)
     response = requests.get(target_url, allow_redirects=False)
 
-    
+
     json_data = response.json()
-    
+
     with open(f'{dir}/Build/{json_path}', 'w') as file:
         json.dump(json_data, file, indent=4)
 
