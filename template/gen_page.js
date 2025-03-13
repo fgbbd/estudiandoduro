@@ -51,13 +51,6 @@ function create_game(game) {
                 .replace('<!-- GAME_IFRAME -->',
                     `<iframe src="${game.url}" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>`);
             break;
-
-        case 3:
-            gameHtml = gameHtml
-                .replace('<!-- GAME_IFRAME -->',
-                    `<iframe src="${game.url}" width="100%" height="600px" frameborder="0" scrolling="no"
-                    onload="this.contentWindow.document.getElementById('listLink')?.remove();"></iframe>`);
-            break;
     }
 
     fs.writeFileSync(`../game/${game.dir}.html`, gameHtml);
