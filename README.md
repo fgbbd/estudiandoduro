@@ -13,6 +13,4 @@ Si quieres sugerir un juego también puedes usar [este formulario](https://tally
 - [ ] Ordenar por popularidad
 - [ ] Marcador de juegos favoritos
 - [ ] Debugging Kour
-- [ ] Añadir Ajedrez
-- [ ] Añadir de Poki: https://poki.com/es/g/shipo-io
 - [ ] Vercel Inshights
