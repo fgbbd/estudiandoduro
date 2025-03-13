@@ -164,8 +164,8 @@ def download_images():
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://html5.gamemonetize.co/iz49b5s6h2xl6jsxrjxra3kkhm09x972/'
-    dir_name = 'rocket_league'
-    # download_assets(input_url, os.path.join('game', dir_name))
+    input_url = 'https://www.minijuegos.com/embed/shipo-io'
+    dir_name = 'shipo'
+    download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
-    build_data('RSD%201.1.0rc4.json', input_url, f'game/{dir_name}/')
+    # build_data('RSD%201.1.0rc4.json', input_url, f'game/{dir_name}/')
