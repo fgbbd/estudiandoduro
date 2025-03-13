@@ -793,7 +793,7 @@ gadgets.config.init({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","p
     gameInstance.logo.className = "logo " + gameInstance.Module.splashScreenStyle;
     gameInstance.container.appendChild(gameInstance.logo);
   }
-  if (!gameInstance.progress) {    
+  if (!gameInstance.progress) {
     gameInstance.progress = document.createElement("div");
     gameInstance.progress.className = "progress " + gameInstance.Module.splashScreenStyle;
     gameInstance.progress.empty = document.createElement("div");
@@ -825,11 +825,11 @@ gadgets.config.init({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","p
  <script src="firebase.js"></script>
  <script src="login.js"></script>
  <script src="firebase-config.js"></script>
- 
+
  <script>
   initializeFireBase();
   initRemoteConfig();
-  
+
   window.unityInstance = gameInstance;
   function showAds() {
    console.log("show ads");
@@ -838,7 +838,7 @@ gadgets.config.init({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","p
   function requestNewAd(){
   // Show video ad
   unityAdFinishedCallback();
-  
+
   }
 
   function unityAdFinishedCallback(){
@@ -856,7 +856,7 @@ gadgets.config.init({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","p
     }
  </script>
 
-  
+
 
 <script>gadgets.util.runOnLoadHandlers();</script><script>window.google.csi.tickDl();
 </script></body></html>

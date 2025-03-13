@@ -1426,14 +1426,14 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function (e) {
 
     var Cs = document.createElement("template");
     Cs.innerHTML = `
-    
+
   <style>
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 16px 0; 
+      padding: 16px 0;
     }
     h1 {
       font-weight: 700;
@@ -1443,10 +1443,10 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function (e) {
       text-align: center;
       margin-bottom: 10px;
     }
-  
+
     #statistics {
       display: flex;
-      margin-bottom: 
+      margin-bottom:
     }
 
     .statistic-container {
@@ -1575,7 +1575,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function (e) {
       height: 24px;
       padding: 0px 4px;
     }
-    
+
     button#refresh-button {
       background-color: var(--key-bg-correct);
       color: var(--key-evaluated-text-color);
@@ -1604,7 +1604,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function (e) {
       height: 24px;
       padding-left: 8px;
     }
-    
+
   </style>
 
   <div class="container">

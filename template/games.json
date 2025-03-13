@@ -188,5 +188,11 @@
         "dir": "slope_multiplayer",
         "url": "https://f3.silvergames.com/m/slope-2-player/",
         "type": 1
+    },
+    {
+        "name": "Rocket Soccer",
+        "dir": "rocket_league",
+        "url": "https://html5.gamemonetize.co/iz49b5s6h2xl6jsxrjxra3kkhm09x972/",
+        "type": 1
     }
 ]

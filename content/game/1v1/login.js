@@ -3,7 +3,7 @@ var tempProviderName;
 
 function retrieveIdToken(successCallback, errorCallback) {
 	if(firebase.auth().currentUser === null){
-		if(errorCallback !== null) 
+		if(errorCallback !== null)
 			errorCallback("User is null");
 		return;
 	}

@@ -10,15 +10,8 @@ Si tienes dudas o sugerencias, puedes abrir un **[issue](https://github.com/fgbb
 Si quieres sugerir un juego también puedes usar [este formulario](https://tally.so/r/3yoBvW).
 
 ## TO-DO List
-- [x] Buscador de juegos por nombre
-- [x] Añadir juegos; Unblocked games de dirft hunters; Camiones
-- [x] Reedirigir a URL original en caso de 404; Página de 404 diferentes para content/games
-- [x] Happy Wheels
-- [x] Hacer que funcione bien la pantalla completa
-- [x] SEO
 - [ ] Ordenar por popularidad
-- [x] Eliminar .html de los juegos
-- [ ] Filtro por categorías
-- [ ] Optimización de la página
-- [x] Hacer click en todo el game-item para a
-- [x] Arreglar Fortzone
+- [ ] Marcador de juegos favoritos
+- [ ] Debugging Kour
+- [ ] Añadir chess.com
+- [ ] Añadir de Poki: https://poki.com/es/g/rocket-soccer-derby y https://poki.com/es/g/shipo-io
