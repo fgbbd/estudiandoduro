@@ -32,14 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
         // Separar los juegos en favoritos y no favoritos
         const favoriteGames = gameElements.filter(game => {
             const gamePath = game.getAttribute('href');
-            const gameName = gamePath.split('/').pop();
-            return favorites.includes(gameName + '.html');
+            const gameName = gamePath.split('/').pop() + ".html";
+            return favorites.includes(gameName);
         });
         console.log(favoriteGames)
         const nonFavoriteGames = gameElements.filter(game => {
             const gamePath = game.getAttribute('href');
-            const gameName = gamePath.split('/').pop();
-            return !favorites.includes(gameName + '.html');
+            const gameName = gamePath.split('/').pop() + ".html";
+            return !favorites.includes(gameName);
         });
         console.log(nonFavoriteGames)
         // Limpiar la lista actual
