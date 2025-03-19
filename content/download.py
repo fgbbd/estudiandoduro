@@ -161,7 +161,7 @@ def download_images():
             filename = path_components[0]
 
         # Crear la ruta de guardado
-        save_path = os.path.join(f'game/polytrack/{last_dir}', filename)  # Resultará en: game/images/pin.svg
+        save_path = os.path.join(f'game/amongus/{last_dir}', filename)  # Resultará en: game/images/pin.svg
 
         # Crear el directorio si no existe
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
@@ -182,8 +182,8 @@ def download_images():
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://watchdocumentaries.com/wp-content/uploads/games/polytrack/'
-    dir_name = 'polytrack'
+    input_url = ''
+    dir_name = 'amongus'
     download_images()
     # download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
