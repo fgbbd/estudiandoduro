@@ -24,37 +24,10 @@ a {
     transform: scale(1.1);
 }
 
-.game-item img {
-    border-radius: 10px;
+.thumb {
     width: 100%;
     height: 150px;
-    border-radius: 8px;
-}
-
-/* Media Queries para ajustar la cantidad de columnas en pantallas más pequeñas */
-@media (max-width: 1200px) {
-    .games-list {
-        grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas medianas */
-    }
-}
-
-@media (max-width: 900px) {
-    .games-list {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas pequeñas */
-    }
-}
-
-@media (max-width: 600px) {
-    .games-list {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas muy pequeñas */
-    }
-}
-
-@media (max-width: 400px) {
-    .games-list {
-        grid-template-columns: 1fr; /* 1 columna en pantallas extra pequeñas */
-        padding: 20px; /* Reducir padding para pantallas más pequeñas */
-    }
+    border-radius: 10px;
 }
 
 /* Contenedor del buscador */
@@ -62,6 +35,12 @@ a {
     position: relative; /* Asegura que el icono se posicione dentro de este contenedor */
     width: 30%; /* Ajusta el ancho al del input */
     margin: 20px auto;
+}
+
+.favorites {
+    border: 3px solid #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    position: relative;
 }
 
 /* Buscador */
@@ -136,3 +115,30 @@ input:not(:placeholder-shown) + #clear-icon {
     text-decoration: none;
 }
 
+
+
+/* Media Queries para ajustar la cantidad de columnas en pantallas más pequeñas */
+@media (max-width: 1200px) {
+    .games-list {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 900px) {
+    .games-list {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    .games-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas muy pequeñas */
+    }
+}
+
+@media (max-width: 400px) {
+    .games-list {
+        grid-template-columns: 1fr; /* 1 columna en pantallas extra pequeñas */
+        padding: 20px; /* Reducir padding para pantallas más pequeñas */
+    }
+}

@@ -21,8 +21,10 @@ games.forEach(game => {
     // Generar lista de juegos para el index
     gameListHtml += `
         <a href="${gameLink}" class="game-item" id="${game.dir}">
-            <img src="${thumbPath}" alt="${game.name}">
-            <h3>${game.name}</h3>
+            <img src="${thumbPath}" alt="${game.name}" class="thumb">
+            <div class="game-header">
+                <h3>${game.name}</h3>
+            </div>
         </a>`;
 
     create_game(game);
@@ -61,8 +63,7 @@ function addOtherWebs() {
     const webs = JSON.parse(fs.readFileSync('webs.json', 'utf-8'));
     let popupHtml = '';
 
-    webs.forEach(web => {
-        const webLink = web;
+    webs.forEach(webLink => {
         popupHtml += `
             <div class="recommended-web">
                 ${webLink.split('.')[0]}

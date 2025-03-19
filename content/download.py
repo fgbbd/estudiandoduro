@@ -133,10 +133,8 @@ def build_data(json_path, url, dir):
 
 def download_images():
     # Crear la carpeta si no existe
-    save_dir = 'game/eggycar/images'
-
     # Leer las URLs desde el archivo
-    with open('urls.txt', 'r', encoding='utf-8') as file:
+    with open('game/urls.txt', 'r', encoding='utf-8') as file:
         urls = file.read().strip().split(',')
 
     for url in urls:
@@ -146,7 +144,9 @@ def download_images():
 
         # Extraer el nombre del archivo de la URL
         filename = os.path.basename(url)
-        save_path = os.path.join(save_dir, filename)
+        dir = os.path.dirname(url)
+        save_path = os.path.join(f'game/{dir}', filename)
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
         try:
             # Descargar la imagen
@@ -164,8 +164,9 @@ def download_images():
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://www.minijuegos.com/embed/shipo-io'
-    dir_name = 'shipo'
-    download_assets(input_url, os.path.join('game', dir_name))
+    input_url = 'https://watchdocumentaries.com/wp-content/uploads/games/polytrack/'
+    dir_name = 'polytrack'
+    download_images()
+    # download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
     # build_data('RSD%201.1.0rc4.json', input_url, f'game/{dir_name}/')
