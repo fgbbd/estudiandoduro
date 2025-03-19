@@ -224,5 +224,11 @@
         "dir": "gswitch3",
         "url": "https://ubg98.github.io/GSwitch3/",
         "type": 1
+    },
+    {
+        "name": "Skiing Fred",
+        "dir": "skiing_fred",
+        "url": "unknown",
+        "type": 1
     }
 ]
