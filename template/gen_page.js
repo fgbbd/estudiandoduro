@@ -56,3 +56,17 @@ function create_game(game) {
     fs.writeFileSync(`../game/${game.dir}.html`, gameHtml);
     console.log(`✅ Generado: ${game.dir}.html (${game.type})`);
 }
+
+function addOtherWebs() {
+    const webs = JSON.parse(fs.readFileSync('webs.json', 'utf-8'));
+    let popupHtml = '';
+
+    webs.forEach(web => {
+        const webLink = web;
+        popupHtml += `
+            <div class="recommended-web">
+                ${webLink.split('.')[0]}
+            </div>
+        `
+    });
+}
