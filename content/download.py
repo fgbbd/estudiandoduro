@@ -4,6 +4,7 @@ import json
 from urllib.parse import urljoin, urlparse
 import re
 from bs4 import BeautifulSoup
+import urllib.parse
 
 # Función para descargar un archivo y guardarlo en la estructura relativa
 def download_file(url, dir_name, base_url):
@@ -144,8 +145,25 @@ def download_images():
 
         # Extraer el nombre del archivo de la URL
         filename = os.path.basename(url)
-        dir = os.path.dirname(url)
-        save_path = os.path.join(f'game/{dir}', filename)
+
+        parsed_url = urllib.parse.urlparse(url)
+        path = parsed_url.path  # Esto da: /wp-content/uploads/games/polytrack/images/pin.svg
+
+        # Dividir la ruta en componentes
+        path_components = path.strip('/').split('/')
+
+        # Obtener el último directorio y el nombre del archivo
+        if len(path_components) > 1:
+            last_dir = path_components[-2]  # Penúltimo componente (último directorio)
+            filename = path_components[-1]  # Último componente (nombre del archivo)
+        else:
+            last_dir = ""
+            filename = path_components[0]
+
+        # Crear la ruta de guardado
+        save_path = os.path.join(f'game/polytrack/{last_dir}', filename)  # Resultará en: game/images/pin.svg
+
+        # Crear el directorio si no existe
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
         try:

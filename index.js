@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const gameName = gamePath.split('/').pop();
             return favorites.includes(gameName + '.html');
         });
-
+        console.log(favoriteGames)
         const nonFavoriteGames = gameElements.filter(game => {
             const gamePath = game.getAttribute('href');
             const gameName = gamePath.split('/').pop();
             return !favorites.includes(gameName + '.html');
         });
-
+        console.log(nonFavoriteGames)
         // Limpiar la lista actual
         gamesList.innerHTML = '';
 

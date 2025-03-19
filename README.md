@@ -12,7 +12,7 @@ Si quieres sugerir un juego también puedes usar [este formulario](https://tally
 ## TO-DO List
 - [ ] Marcador de juegos favoritos
 - [ ] Iframe bloqueado(Subway surfers, highway traffic), survival race y https://www.snake.es/
-- [ ] Meter amongus, bumfi rocket, skiing fred, gswitch
+- [ ] Meter amongus, bumfi rocket, skiing fred, gswitch, Tap Tap Shots, Snowbattle
 - [ ] Páginas de unblocked
 - [ ] Descipcióin de página principal con todos los juegos y desciprción
 
