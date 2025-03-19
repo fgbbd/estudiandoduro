@@ -200,5 +200,11 @@
         "dir": "shipo",
         "url": "https://www.minijuegos.com/embed/shipo-io",
         "type": 1
+    },
+    {
+        "name": "Polytrack",
+        "dir": "Polytrack",
+        "url": "https://watchdocumentaries.com/wp-content/uploads/games/polytrack/",
+        "type": 1
     }
 ]
