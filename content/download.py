@@ -182,9 +182,9 @@ def download_images():
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://classroom6x.gitlab.io/blumgi-rocket/'
-    dir_name = 'blumgi'
-    download_images()
+    input_url = 'https://ubg44.github.io/SkiingFred/'
+    dir_name = 'skiing_fred'
+    # download_images()
     # download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
-    # build_data('RSD%201.1.0rc4.json', input_url, f'game/{dir_name}/')
+    build_data('skiingfred-webgl-110_40.json', input_url, f'game/{dir_name}/')
