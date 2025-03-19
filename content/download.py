@@ -4,7 +4,6 @@ import json
 from urllib.parse import urljoin, urlparse
 import re
 from bs4 import BeautifulSoup
-import urllib.parse
 
 # Función para descargar un archivo y guardarlo en la estructura relativa
 def download_file(url, dir_name, base_url):
@@ -132,43 +131,26 @@ def build_data(json_path, url, dir):
         else:
             print(f"Error descargando {filename}: {file_response.status_code}")
 
-def download_images():
+def download_images(game_url, dir_name):
     # Crear la carpeta si no existe
     # Leer las URLs desde el archivo
     with open('game/urls.txt', 'r', encoding='utf-8') as file:
-        urls = file.read().strip().split(',')
+        urls = file.read().strip().split('\n')
 
     for url in urls:
         url = url.strip()  # Limpiar espacios extra
         if not url:
             continue  # Saltar líneas vacías
 
-        # Extraer el nombre del archivo de la URL
-        filename = os.path.basename(url)
-
-        parsed_url = urllib.parse.urlparse(url)
-        path = parsed_url.path  # Esto da: /wp-content/uploads/games/polytrack/images/pin.svg
-
-        # Dividir la ruta en componentes
-        path_components = path.strip('/').split('/')
-
-        # Obtener el último directorio y el nombre del archivo
-        if len(path_components) > 1:
-            last_dir = path_components[-2]  # Penúltimo componente (último directorio)
-            filename = path_components[-1]  # Último componente (nombre del archivo)
-        else:
-            last_dir = ""
-            filename = path_components[0]
-
         # Crear la ruta de guardado
-        save_path = os.path.join(f'game/blumgi/{last_dir}', filename)  # Resultará en: game/images/pin.svg
+        save_path = f'game/{dir_name}{url}'
 
         # Crear el directorio si no existe
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
         try:
             # Descargar la imagen
-            response = requests.get(url, stream=True)
+            response = requests.get(f'{game_url}{url}', stream=True)
             response.raise_for_status()  # Lanza error si la respuesta no es 200
 
             # Guardar la imagen en el directorio especificado
@@ -182,9 +164,9 @@ def download_images():
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://ubg44.github.io/SkiingFred/'
-    dir_name = 'skiing_fred'
-    # download_images()
+    input_url = 'https://ubg98.github.io/GSwitch3/'
+    dir_name = 'gswitch3'
+    download_images(input_url, dir_name)
     # download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
-    build_data('skiingfred-webgl-110_40.json', input_url, f'game/{dir_name}/')
+    # build_data('skiingfred-webgl-110_40.json', input_url, f'game/{dir_name}/')
