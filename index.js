@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Separar los juegos en favoritos y no favoritos
         const favoriteGames = gameElements.filter(game => {
-            return !favorites.includes(game.id);
+            return favorites.includes(game.id);
         });
         console.log(favoriteGames)
         const nonFavoriteGames = gameElements.filter(game => {
