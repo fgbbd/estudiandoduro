@@ -212,5 +212,11 @@
         "dir": "amongus",
         "url": "https://watchdocumentaries.com/wp-content/uploads/games/among-us/",
         "type": 1
+    },
+    {
+        "name": "Blumgi Rocket",
+        "dir": "blumgi",
+        "url": "https://classroom6x.gitlab.io/blumgi-rocket/",
+        "type": 1
     }
 ]
