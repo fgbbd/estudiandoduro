@@ -164,8 +164,8 @@ def download_images(game_url, dir_name):
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://ubg98.github.io/GSwitch3/'
-    dir_name = 'gswitch3'
+    input_url = 'https://unblocked-games.s3.amazonaws.com/games/2023/q/1/tap-tap-shots'
+    dir_name = 'taptapshots'
     download_images(input_url, dir_name)
     # download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')

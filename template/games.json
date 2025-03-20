@@ -230,5 +230,11 @@
         "dir": "skiing_fred",
         "url": "unknown",
         "type": 1
+    },
+    {
+        "name": "Tap Tap Shots",
+        "dir": "taptapshots",
+        "url": "https://unblocked-games.s3.amazonaws.com/games/2023/q/1/tap-tap-shots/",
+        "type": 1
     }
 ]
