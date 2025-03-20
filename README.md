@@ -10,8 +10,6 @@ Si tienes dudas o sugerencias, puedes abrir un **[issue](https://github.com/fgbb
 Si quieres sugerir un juego también puedes usar [este formulario](https://tally.so/r/3yoBvW).
 
 ## TO-DO List
-- [ ] Iframe bloqueado(highway traffic), survival race y https://www.snake.es/
-- [ ] Meter: Snowbattle
 - [ ] Páginas de unblocked
 - [ ] Descripción de página principal con todos los juegos y desciprción
 

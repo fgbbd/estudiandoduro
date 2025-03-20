@@ -13,10 +13,13 @@ const indexTemplate = fs.readFileSync('index.template.html', 'utf-8');
 const gameTemplate = fs.readFileSync('game.template.html', 'utf-8');
 
 let gameListHtml = '';
+let gameNames = '';
 
 games.forEach(game => {
     const thumbPath = `/assets/img/${game.dir}.webp`;
     const gameLink = `/game/${game.dir}`; // Ahora generamos archivos individuales
+
+    gameNames += `${game.name}, `
 
     // Generar lista de juegos para el index
     gameListHtml += `
@@ -31,15 +34,18 @@ games.forEach(game => {
 });
 
 // Generar el index con la lista de juegos
-const finalIndexHtml = indexTemplate.replace('<!-- GAMES_LIST -->', gameListHtml);
+const finalIndexHtml = indexTemplate
+    .replace('<!-- GAMES_LIST -->', gameListHtml)
+    .replace('[JUEGOS]', gameNames);
+
 fs.writeFileSync('../index.html', finalIndexHtml);
 console.log('✅ index.html generado con éxito.');
 
 function create_game(game) {
     let gameHtml = gameTemplate
         .replace('<!-- GAME_TITLE -->', game.name)
-        .replace('replace_description', `Juega ${game.name} gratis desbloqueado. `)
-        .replace('replace_keywords', `${game.name}, gratis, desbloqueado, juego, estudia duro`)
+        .replace('replace_description', `Juega ${game.name} gratis desbloqueado en estudiandoduro. Juega gratis a este y muchos más juegos gratis y sin anuncios. `)
+        .replace('replace_keywords', `${game.name}, gratis, desbloqueado, juego, estudiandoduro`)
 
     switch (game.type) {
         case 1:
@@ -57,17 +63,4 @@ function create_game(game) {
 
     fs.writeFileSync(`../game/${game.dir}.html`, gameHtml);
     console.log(`✅ Generado: ${game.dir}.html (${game.type})`);
-}
-
-function addOtherWebs() {
-    const webs = JSON.parse(fs.readFileSync('webs.json', 'utf-8'));
-    let popupHtml = '';
-
-    webs.forEach(webLink => {
-        popupHtml += `
-            <div class="recommended-web">
-                ${webLink.split('.')[0]}
-            </div>
-        `
-    });
 }
