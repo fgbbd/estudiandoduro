@@ -11,7 +11,7 @@ Si quieres sugerir un juego también puedes usar [este formulario](https://tally
 
 ## TO-DO List
 - [ ] Iframe bloqueado(Subway surfers, highway traffic), survival race y https://www.snake.es/
-- [ ] Meter:  Tap Tap Shots, Snowbattle
+- [ ] Meter: Snowbattle
 - [ ] Páginas de unblocked
 - [ ] Descripción de página principal con todos los juegos y desciprción
 

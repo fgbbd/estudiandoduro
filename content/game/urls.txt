@@ -1,5 +1,0 @@
-/fonts/octin%20sports%20rg.ttf
-/images/shared-0-sheet2.png
-/images/shared-0-sheet3.png
-/images/particle1-sheet0.png
-/sw.js
