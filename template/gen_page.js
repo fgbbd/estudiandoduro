@@ -28,7 +28,7 @@ games.forEach(game => {
     // Generar lista de juegos para el index
     gameListHtml += `
         <a href="${gameLink}" class="game-item" id="${game.dir}">
-            <img src="${thumbPath}" alt="${game.name}" class="thumb">
+            <img src="${thumbPath}" alt="Imagen miniatura del juego" class="thumb">
             <div class="game-header">
                 <p>${game.name}</p>
             </div>

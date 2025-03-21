@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header aria-hidden="true">
         <h1>Estudia duro con los siguientes artículos científicos</h1>
         <div id="search-container">
             <input type="text" name="buscador" placeholder="Busca un juego" id="buscador">
@@ -28,11 +28,11 @@
             </div>
         </div>
     </header>
-    <main class="games-list" id="games-list"><!-- GAMES_LIST --></main>
+    <main class="games-list" id="games-list" aria-hidden="true"><!-- GAMES_LIST --></main>
     <div id="no-match" style="display: none">
         Aún no tenemos ese juego, pero puedes <a href="#" id="suggest-link" target="_blank"> sugerirlo aquí. </a>
     </div>
-    <footer id="footer">Creado por el Sr. Verduras -
+    <footer id="footer" aria-hidden="true">Creado por el Sr. Verduras -
         <a href="https://tally.so/r/3yoBvW" target="_blank">Sugerir un juego</a> -
         <a href="https://github.com/fgbbd/estudiandoduro" target="_blank" id="github">
             <img src="/assets/github.webp" alt="Logo GitHub" width="26px">
