@@ -11,5 +11,3 @@ Si quieres sugerir un juego también puedes usar [este formulario](https://tally
 
 ## TO-DO List
 - [ ] Páginas de unblocked
-- [ ] Descripción de página principal con todos los juegos y desciprción
-

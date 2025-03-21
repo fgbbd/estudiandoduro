@@ -47,7 +47,7 @@ h1 {
 }
 
 /* Estilos para el botón "Volver a la página principal" */
-button {
+.upper-buttons {
     width: 50px;
     height: 50px;
     background-color: #5c5c63;
@@ -60,12 +60,12 @@ button {
     margin-top: 0; /* Ajusta la posición del botón */
 }
 
-button:hover {
+.upper-buttons:hover {
     background-color: #8c8c94; /* Un verde ligeramente más oscuro en hover */
     transform: translateY(-2px); /* Un pequeño efecto de elevación */
 }
 
-button img {
+.upper-buttons img {
     width: 30px; /* Ajusta el tamaño de la imagen */
     height: 30px;
 }

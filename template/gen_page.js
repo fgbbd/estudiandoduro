@@ -3,6 +3,7 @@ const fs = require('fs');
 
 // Leer la lista de juegos
 const games = JSON.parse(fs.readFileSync('games.json', 'utf-8'));
+const webs = JSON.parse(fs.readFileSync('webs.json', 'utf-8'));
 
 // Ordenar los juegos alfabéticamente
 games.sort((a, b) => a.name.localeCompare(b.name, 'es', { sensitivity: 'base' }));
@@ -12,8 +13,11 @@ const indexTemplate = fs.readFileSync('index.template.html', 'utf-8');
 // Leer la plantilla de página individual
 const gameTemplate = fs.readFileSync('game.template.html', 'utf-8');
 
+const webTemplate = fs.readFileSync('web.template.html', 'utf-8');
+
 let gameListHtml = '';
 let gameNames = '';
+let websIndexHtml = '';
 
 games.forEach(game => {
     const thumbPath = `/assets/img/${game.dir}.webp`;
@@ -33,10 +37,12 @@ games.forEach(game => {
     create_game(game);
 });
 
-// Generar el index con la lista de juegos
+setWebs()
+
 const finalIndexHtml = indexTemplate
     .replace('<!-- GAMES_LIST -->', gameListHtml)
-    .replace('[JUEGOS]', gameNames);
+    .replace('[JUEGOS]', gameNames)
+    .replace('<!-- WEBS_LIST -->', websIndexHtml);
 
 fs.writeFileSync('../index.html', finalIndexHtml);
 console.log('✅ index.html generado con éxito.');
@@ -63,4 +69,21 @@ function create_game(game) {
 
     fs.writeFileSync(`../game/${game.dir}.html`, gameHtml);
     console.log(`✅ Generado: ${game.dir}.html (${game.type})`);
+}
+
+function setWebs() {
+    webs.forEach(web => {
+        websIndexHtml += `
+            <a href="/web/${web.dir}" class="opcion">${web.name}</a>
+        `
+
+        let webHtml = webTemplate
+            .replace('<!-- GAME_TITLE -->', web.name)
+            .replace('[GAME_LINK]', web.url)
+            .replace('<!-- WEB_IFRAME -->',
+                `<iframe src="${web.url}" width="100%" height="600px" frameborder="0"></iframe>`)
+
+        fs.writeFileSync(`../web/${web.dir}.html`, webHtml);
+        console.log(`✅ Generado: ${web.dir}.html`);
+    })
 }

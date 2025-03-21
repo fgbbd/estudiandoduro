@@ -1,4 +1,12 @@
 [
-    "https://vseigru.net/",
-    "https://webglmath.github.io"
+    {
+        "name": "Vseigru.net",
+        "dir": "vseigru",
+        "url": "https://vseigru.net/"
+    },
+    {
+        "name": "WebGL math",
+        "dir": "webglmath",
+        "url": "https://webglmath.github.io"
+    }
 ]

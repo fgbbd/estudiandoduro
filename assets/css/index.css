@@ -30,10 +30,12 @@ a {
     border-radius: 10px;
 }
 
-/* Contenedor del buscador */
 #search-container {
-    position: relative; /* Asegura que el icono se posicione dentro de este contenedor */
-    width: 30%; /* Ajusta el ancho al del input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Espaciado entre el input y el botón */
+    width: 50%;
     margin: 20px auto;
 }
 
@@ -41,6 +43,71 @@ a {
     border: 3px solid #ffcc00;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
     position: relative;
+}
+
+/* Estilo del botón */
+#other-webs {
+    background-color: #333347;
+    color: #cdd6f4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    height: 45px;
+}
+
+/* Contenedor del dropdown */
+.dropdown {
+    position: relative; /* Para que el menú se posicione en relación con el botón */
+}
+
+/* Menú desplegable */
+#other-webs-options {
+    position: absolute;
+    top: 100%; /* Justo debajo del botón */
+    left: 0;
+    min-width: 100%; /* Que tenga al menos el mismo ancho que el botón */
+    background-color: #1e1e2e;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s, transform 0.4s;
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover #other-webs-options {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown:hover #other-webs {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+/* Estilos de las opciones del menú */
+.opcion {
+    display: block;
+    padding: 10px;
+    color: #cdd6f4;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.opcion:hover {
+    background-color: #44475a;
 }
 
 /* Buscador */
@@ -52,9 +119,9 @@ input {
     padding: 15px;
     border: none;
     border-radius: 10px;
-    width: 100%; /* Asegura que el input ocupe todo el ancho del contenedor */
+    width: 55%;
     display: block;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
     outline: none;
     height: 15px;
@@ -114,8 +181,6 @@ input:not(:placeholder-shown) + #clear-icon {
 #no-match a:hover {
     text-decoration: none;
 }
-
-
 
 /* Media Queries para ajustar la cantidad de columnas en pantallas más pequeñas */
 @media (max-width: 1200px) {
