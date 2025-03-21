@@ -30,7 +30,7 @@ games.forEach(game => {
         <a href="${gameLink}" class="game-item" id="${game.dir}">
             <img src="${thumbPath}" alt="${game.name}" class="thumb">
             <div class="game-header">
-                <h3>${game.name}</h3>
+                <p>${game.name}</p>
             </div>
         </a>`;
 
