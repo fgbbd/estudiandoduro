@@ -37,6 +37,7 @@ a {
     gap: 5px; /* Espaciado entre el input y el botón */
     width: 50%;
     margin: 20px auto;
+    position: relative;
 }
 
 .favorites {
@@ -133,19 +134,16 @@ input:focus {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Estilo de la cruz */
 #clear-icon {
     position: absolute;
-    right: 15px; /* Se mantiene dentro del input */
-    top: 50%;
+    right: 31%; /* Position from the right edge of the container */
+    top: 48%;
     transform: translateY(-50%);
     font-size: 1.5rem;
     color: #cdd6f4;
     cursor: pointer;
     display: none; /* Oculta la cruz por defecto */
-    padding: 7px; /* Aumenta el padding para el círculo */
-    border-radius: 50%; /* Hace que el fondo sea circular */
-}
+  }
 
 #clear-icon:hover {
     color: #fff
