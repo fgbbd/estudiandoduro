@@ -236,5 +236,11 @@
         "dir": "taptapshots",
         "url": "https://unblocked-games.s3.amazonaws.com/games/2023/q/1/tap-tap-shots/",
         "type": 1
+    },
+    {
+        "name": "Parking Fury 3",
+        "dir": "parkingfury3",
+        "url": "https://webglmath.github.io/parking-fury-3",
+        "type": 1
     }
 ]

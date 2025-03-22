@@ -164,9 +164,9 @@ def download_images(game_url, dir_name):
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://app-97317.games.s3.yandex.net/97317/zr27uqx4qauq31fg2ud41a7oye9c4dki/index.html'
-    dir_name = 'highway_traffic'
-    # download_images(input_url, dir_name)
+    input_url = 'https://webglmath.github.io/parking-fury-3'
+    dir_name = 'parkingfury3'
+    download_images(input_url, dir_name)
     # download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
-    build_data('game.json', input_url, f'game/{dir_name}/')
+    # build_data('game.json', input_url, f'game/{dir_name}/')

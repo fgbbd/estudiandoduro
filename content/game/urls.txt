@@ -1,3 +1,2 @@
-/Build/DriftHunters_1.2_WebGL_BR.framework.js.unityweb
-/Build/DriftHunters_1.2_WebGL_BR.wasm.unityweb
-/Build/DriftHunters_1.2_WebGL_BR.data.unityweb
+/assets/font.fnt
+/assets/spark_frames.json
