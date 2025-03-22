@@ -1,4 +1,3 @@
-// Fullscreen
 document.addEventListener("DOMContentLoaded", () => {
     const fullscreenButton = document.getElementById("fullscreen");
     const filename = window.location.pathname.split('/').pop();
@@ -7,15 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const favoriteButton = document.getElementById("favorite");
     const favoriteImg = favoriteButton.querySelector('img') || favoriteButton;
 
+    // Set image fo favorite depending on state
     if (favorites.includes(filename)) {
         favorito = true;
         favoriteImg.src = "/assets/favorite_on.webp";
     }
     else {
         favorito = false;
-        favoriteImg.src = "/assets/favorite.webp"; // Set default image
+        favoriteImg.src = "/assets/favorite.webp";
     }
 
+    // Fullscreen
     fullscreenButton.addEventListener("click", () => {
         const gameContainer = document.getElementById("game-container");
 
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Make the favorite button work
     favoriteButton.addEventListener("click", () => {
         if (!favorito) {
             favoriteImg.src = "/assets/favorite_on.webp";
