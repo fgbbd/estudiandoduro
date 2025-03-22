@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const favoriteGames = gameElements.filter(game => {
             return favorites.includes(game.id);
         });
-        console.log(favoriteGames)
+
         const nonFavoriteGames = gameElements.filter(game => {
             return !favorites.includes(game.id);
         });
-        console.log(nonFavoriteGames)
+
         // Limpiar la lista actual
         gamesList.innerHTML = '';
 
