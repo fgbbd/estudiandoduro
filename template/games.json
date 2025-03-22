@@ -242,5 +242,11 @@
         "dir": "parkingfury3",
         "url": "https://webglmath.github.io/parking-fury-3",
         "type": 1
+    },
+    {
+        "name": "Basketball Stars",
+        "dir": "basketball_stars",
+        "url": "https://webglmath.github.io/basketball-stars/",
+        "type": 1
     }
 ]

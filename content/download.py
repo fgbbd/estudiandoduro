@@ -164,8 +164,8 @@ def download_images(game_url, dir_name):
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://webglmath.github.io/parking-fury-3'
-    dir_name = 'parkingfury3'
+    input_url = 'https://webglmath.github.io/basketball-stars'
+    dir_name = 'basketball_stars'
     download_images(input_url, dir_name)
     # download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
