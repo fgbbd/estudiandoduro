@@ -73,7 +73,8 @@ function create_game(game) {
 
 function setWebs() {
     webs.forEach(web => {
-        websIndexHtml += `<a href="/web/${web.dir}" class="opcion">${web.name}</a>`
+        websIndexHtml += `
+            <a href="/web/${web.dir}" class="opcion">${web.name}</a>`
 
         let webHtml = webTemplate
             .replace('<!-- GAME_TITLE -->', web.name)
