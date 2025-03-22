@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/games.css">
+    <link type="image/webp" href="/assets/favicon.webp" rel="icon">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Classroom</title>
+</head>
+<body>
+    <header id="title" aria-hidden="true">
+        <h1 id="game-title"> KidZone Lol Games </h1>
+        <a href="/">
+            <button id="back" class="upper-buttons">
+                <img src="/assets/home.webp">
+            </button>
+        </a>
+        <button id="fullscreen" class="upper-buttons">
+            <img src="/assets/fullscreen.webp">
+        </button>
+        <a id="open" class="upper-buttons" href="https://kidzone.lol/popular-lessons.html" target="_blank">
+            <img src="/assets/open.webp" style="margin-top: 17%;">
+        </a>
+    </header>
+    <main id="game-container" aria-hidden="true"> <iframe src="https://kidzone.lol/popular-lessons.html" width="100%" height="600px" frameborder="0"></iframe> </main>
+    <footer id="footer" aria-hidden="true">
+        <a href="https://tally.so/r/3yoBvW" target="_blank">Sugerir un juego</a> -
+        <a href="https://github.com/fgbbd/estudiandoduro" target="_blank" id="github">
+            <img src="/assets/github.webp" alt="Logo GitHub">
+        </a>
+    </footer>
+    <script src="/game.js"></script>
+    <script type="module">
+        import { inject } from 'https://esm.sh/@vercel/analytics';
+        import { injectSpeedInsights } from 'https://esm.sh/@vercel/speed-insights';
+
+        injectSpeedInsights();
+        inject();
+    </script>
+</body>
+</html>

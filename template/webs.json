@@ -3,5 +3,25 @@
         "name": "WebGL math",
         "dir": "webglmath",
         "url": "https://webglmath.github.io"
+    },
+    {
+        "name": "KidZone Lol Games",
+        "dir": "kidzone",
+        "url": "https://kidzone.lol/popular-lessons.html"
+    },
+    {
+        "name": "deev.is Games",
+        "dir": "deevis",
+        "url": "https://g.deev.is/"
+    },
+    {
+        "name": "Unblocked-2025",
+        "dir": "unblocked2025",
+        "url": "https://unblocked-2025.github.io/"
+    },
+    {
+        "name": "Classroom Management",
+        "dir": "classroom_management",
+        "url": "https://classroom-management-50.us/"
     }
 ]
