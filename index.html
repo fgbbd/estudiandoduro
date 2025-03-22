@@ -23,7 +23,7 @@
             <div class="dropdown">
                 <button id="other-webs">Otras páginas</button>
                 <div id="other-webs-options">
-                    
+
             <a href="/web/webglmath" class="opcion">WebGL math</a>
                 </div>
             </div>
@@ -286,5 +286,12 @@
         </a>
     </footer>
     <script src="/index.js"></script>
+    <script type="module">
+        import { inject } from 'https://esm.sh/@vercel/analytics';
+        import { injectSpeedInsights } from 'https://esm.sh/@vercel/speed-insights';
+
+        injectSpeedInsights();
+        inject();
+    </script>
 </body>
 </html>
