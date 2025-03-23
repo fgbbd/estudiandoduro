@@ -35,5 +35,12 @@
     <!-- Imagen grande -->
     <p>Haz click <a href="/">aquí</a> para ir a la página principal.</p>
     <img src="https://http.cat/404" alt="Error 404">
+    <script type="module">
+        import { inject } from 'https://esm.sh/@vercel/analytics';
+        import { injectSpeedInsights } from 'https://esm.sh/@vercel/speed-insights';
+
+        injectSpeedInsights();
+        inject();
+    </script> 
 </body>
 </html>
