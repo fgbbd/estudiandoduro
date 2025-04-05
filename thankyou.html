@@ -29,6 +29,9 @@
             const url = `https://api.github.com/repos/${owner}/${repo}/issues?per_page=1&sort=created&direction=desc`;
 
             try {
+                // Delay the fetch request by 5 seconds (5000 ms)
+                await new Promise(resolve => setTimeout(resolve, 5000));
+
                 const response = await fetch(url);
                 const data = await response.json();
 
@@ -38,7 +41,7 @@
                     window.location.href = issue.html_url;
                 } else {
                     const issue = `https://github.com/${owner}/${repo}`;
-                    console.log(`Redirigiendo al issue: #${issue.number} - ${issue.title}`);
+                    console.log(`No hay issues. Redirigiendo al repositorio: ${issue}`);
                     window.location.href = issue;
                 }
             } catch (error) {
