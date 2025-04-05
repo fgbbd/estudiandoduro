@@ -1,5 +1,0 @@
-/assets/atlases/x1/preloader.json
-/assets/atlases/x1/interface.json
-/assets/atlases/x1/preloader.json
-/assets/atlases/x1/gameplay.json
-/assets/atlases/x1/ach.json

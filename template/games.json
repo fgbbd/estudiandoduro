@@ -242,5 +242,11 @@
         "dir": "basketball_stars",
         "url": "https://webglmath.github.io/basketball-stars/",
         "type": 1
+    },
+    {
+        "name": "Drift Boss",
+        "dir": "drift_boss",
+        "url": "https://driftbossonline.github.io/file/",
+        "type": 1
     }
 ]
