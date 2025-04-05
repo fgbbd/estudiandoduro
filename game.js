@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Set image fo favorite depending on state
     if (favorites.includes(filename)) {
         favorito = true;
-        favoriteImg.src = "/assets/favorite_on.webp";
+        favoriteImg.src = "/assets/icons/favorite_on.svg";
     }
     else {
         favorito = false;
-        favoriteImg.src = "/assets/favorite.webp";
+        favoriteImg.src = "/assets/icons/favorite.svg";
     }
 
     // Fullscreen
@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Make the favorite button work
     favoriteButton.addEventListener("click", () => {
         if (!favorito) {
-            favoriteImg.src = "/assets/favorite_on.webp";
+            favoriteImg.src = "/assets/icons/favorite_on.svg";
             favorites.push(filename);
             localStorage.setItem('favorites', JSON.stringify(favorites));
             favorito = true; // Toggle the state to true
         }
         else {
-            favoriteImg.src = "/assets/favorite.webp"; // Set image to off state
+            favoriteImg.src = "/assets/icons/favorite.svg"; // Set image to off state
             favorites = favorites.filter(item => item !== filename);
             localStorage.setItem('favorites', JSON.stringify(favorites));
             favorito = false; // Toggle the state to false
