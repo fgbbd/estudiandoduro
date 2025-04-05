@@ -35,9 +35,11 @@
                 if (data.length > 0) {
                     const issue = data[0];
                     console.log(`Redirigiendo al issue: #${issue.number} - ${issue.title}`);
-                    window.location.href = issue.html_url; // 🔁 Redirección aquí
+                    window.location.href = issue.html_url;
                 } else {
-                    console.log('No hay issues en este repo.');
+                    const issue = `https://github.com/${owner}/${repo}`;
+                    console.log(`Redirigiendo al issue: #${issue.number} - ${issue.title}`);
+                    window.location.href = issue;
                 }
             } catch (error) {
                 console.error('Error al obtener el issue:', error);
