@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-Sitemap: https://estudiandoduro.vercel.app/sitemap.xml
