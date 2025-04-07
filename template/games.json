@@ -248,5 +248,11 @@
         "dir": "drift_boss",
         "url": "https://driftbossonline.github.io/file/",
         "type": 1
+    },
+    {
+        "name": "Level Devil",
+        "dir": "level_devil",
+        "url": "https://bitlifeonline.github.io/level-devil/",
+        "type": 1
     }
 ]
