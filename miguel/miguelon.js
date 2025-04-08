@@ -9,7 +9,7 @@ fetch("/miguel/frases.json")
 const miguelonText = document.getElementById('miguelon-frase');
 const miguelon = document.getElementById('miguelon');
 
-setInterval(quizasMiguelon, 5 * 1000)
+setInterval(quizasMiguelon, 60 * 1000)
 
 function quizasMiguelon() {
     const numero = Math.floor(Math.random() * 2)
