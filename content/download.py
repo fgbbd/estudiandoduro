@@ -164,9 +164,9 @@ def download_images(game_url, dir_name):
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://htmlxm.github.io/h3/super-star-car/'
-    dir_name = 'super_star_car'
-    download_images(input_url, dir_name)
+    input_url = 'https://unblocked-2025.github.io/action-games/station-141/'
+    dir_name = 'station141'
+    # download_images(input_url, dir_name)
     # download_assets(input_url, os.path.join('game', dir_name))
     # download_file('https://watchdocumentaries.com/wp-content/uploads/games/granny-2/Build/Granny%202.loader.js', 'granny2', 'https://watchdocumentaries.com/wp-content/uploads/games/granny-2/')
-    # build_data('Build.json', input_url, f'game/{dir_name}')
+    build_data('WebGL.json', input_url, f'game/{dir_name}')
