@@ -254,5 +254,11 @@
         "dir": "level_devil",
         "url": "https://bitlifeonline.github.io/level-devil/",
         "type": 1
+    },
+    {
+        "name": "Super Star Car",
+        "dir": "super_star_car",
+        "url": "https://htmlxm.github.io/h3/super-star-car/",
+        "type": 1
     }
 ]
