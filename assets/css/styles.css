@@ -46,3 +46,85 @@ h1 {
 #github:hover img {
     filter: invert(40%);
 }
+
+
+#miguelon {
+    display: none;
+    background-color: #cdd6f4;
+    color: #1e1e2e;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    height: 10%;
+    margin: 40px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+    opacity: 1;
+    transform: translateY(60px); /* Comienza desplazado hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Suave entrada */
+}
+
+/* Animación de entrada con efecto de rebote */
+#miguelon.show {
+    display: block; /* Muestra el elemento */
+    opacity: 1; /* Vuelve visible */
+    transform: translateY(0); /* Mueve el elemento a su posición final */
+    animation: bounceIn 0.8s ease-out forwards; /* Rebotar al entrar */
+}
+
+/* Animación de salida hacia la derecha */
+#miguelon.hide {
+    opacity: 0; /* Desaparece */
+    transform: translateY(60px) translateX(200px); /* Desplaza el elemento hacia la derecha */
+    transition: opacity 2s ease, transform 2s ease; /* Suaviza la salida */
+}
+
+/* Definición de la animación bounce */
+@keyframes bounceIn {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(-10px); /* Rebote hacia arriba */
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#miguelon::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #cdd6f4;
+}
+
+#miguelon-texto {
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    right: 0;
+}
+
+#miguelon-frase {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+#miguelon img {
+    border-radius: 10px;
+}
