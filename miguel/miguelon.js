@@ -9,8 +9,8 @@ fetch("/miguel/frases.json")
 const miguelonText = document.getElementById('miguelon-frase');
 const miguelon = document.getElementById('miguelon');
 
-setInterval(quizasMiguelon, 65 * 1000)
-
+// setInterval(quizasMiguelon, 65 * 1000)
+mostrarMiguelon()
 function quizasMiguelon() {
     const numero = Math.floor(Math.random() * 3)
     if (numero === 1) {
@@ -32,3 +32,8 @@ function quitarMiguelon() {
     miguelon.classList.add('hide');
     miguelon.classList.remove('show')
 }
+
+miguelon.addEventListener('click', () => {
+    miguelon.classList.add("hide");
+    miguelon.classList.remove("show");
+})
