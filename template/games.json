@@ -266,5 +266,11 @@
         "dir": "station141",
         "url": "https://unblocked-2025.github.io/action-games/station-141/",
         "type": 1
+    },
+    {
+        "name": "Infiltrating the Airship",
+        "dir": "infiltrating_airship",
+        "url": "https://infiltrating-the-airship.game-files.crazygames.com/ruffle/infiltrating-the-airship/2/infiltrating_the_airship.html?v=1.328",
+        "type": 1
     }
 ]
