@@ -66,6 +66,7 @@ h1 {
     opacity: 1;
     transform: translateY(60px); /* Comienza desplazado hacia abajo */
     transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Suave entrada */
+    padding-bottom: 2.2vh;
 }
 
 /* Animación de entrada con efecto de rebote */
@@ -114,7 +115,7 @@ h1 {
     position: absolute;
     height: 80%;
     width: 80%;
-    right: 0;
+    right: -2.2vh;
 }
 
 #miguelon-frase {
@@ -127,4 +128,6 @@ h1 {
 
 #miguelon img {
     border-radius: 10px;
+    width: 11vh;
+    height: 11vh;
 }
