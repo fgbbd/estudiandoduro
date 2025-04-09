@@ -54,19 +54,18 @@ h1 {
     color: #1e1e2e;
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: fixed; /* ¡Este es el cambio clave! */
+    right: 40px; /* Ajuste desde el borde derecho */
+    bottom: 50px; /* Ajuste desde el borde inferior */
     width: 30%;
     height: 10%;
-    margin: 40px;
-    margin-bottom: 50px;
     border-radius: 15px;
     border-bottom-right-radius: 0px;
     opacity: 1;
     transform: translateY(60px); /* Comienza desplazado hacia abajo */
     transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Suave entrada */
     padding-bottom: 2.2vh;
+    z-index: 999; /* Asegúrate de que esté por encima de todo */
 }
 
 /* Animación de entrada con efecto de rebote */
