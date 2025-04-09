@@ -9,13 +9,13 @@ fetch("/miguel/frases.json")
 const miguelonText = document.getElementById('miguelon-frase');
 const miguelon = document.getElementById('miguelon');
 
-setInterval(quizasMiguelon, 60 * 1000)
+setInterval(quizasMiguelon, 65 * 1000)
 
 function quizasMiguelon() {
-    const numero = Math.floor(Math.random() * 2)
+    const numero = Math.floor(Math.random() * 3)
     if (numero === 1) {
         mostrarMiguelon()
-        setTimeout(quitarMiguelon, 7 * 1000)
+        setTimeout(quitarMiguelon, 12 * 1000)
     }
 }
 
