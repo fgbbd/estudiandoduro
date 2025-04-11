@@ -47,7 +47,7 @@ function quizasMiguelon() {
 }
 
 function mostrarMiguelon(persona, listaElegida) {
-    const personaMostrar = persona === 'Miguel' ? 'Miguelon' : 'Pilar';
+    const personaMostrar = persona === 'Miguel' ? 'Miguelón' : 'Pilar';
 
     // Limpiar el contenido anterior y reemplazar solo el texto "Miguelon dice:"
     miguelonEnunciado.innerHTML = `${personaMostrar} dice: <div id="miguelon-frase"></div>`;
