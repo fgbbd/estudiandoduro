@@ -18,5 +18,29 @@ const gameNames = games.map((g) => g.name).join(', ');
   <Header />
   <GameList />
   <Footer />
-  <script src="../scripts/index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.getElementById("buscador");
+      const noMatch = document.getElementById("no-match");
+      const footer = document.getElementById("footer");
+      const games = document.querySelectorAll("#games-list > div");
+
+      if (!input || !noMatch || !footer) return;
+
+      input.addEventListener("input", () => {
+        const query = input.value.toLowerCase().trim();
+        let found = false;
+
+        games.forEach(game => {
+          const name = game.dataset.name?.toLowerCase() || "";
+          const match = name.includes(query);
+          game.style.display = match ? "block" : "none";
+          if (match) found = true;
+        });
+
+        noMatch.style.display = found ? "none" : "block";
+        footer.style.display = found ? "flex" : "none";
+      });
+    });
+  </script>
 </BaseLayout>
