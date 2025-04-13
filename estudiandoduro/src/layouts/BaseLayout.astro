@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+
+import Analytics from '@vercel/analytics/astro'
+import SpeedInsights from '@vercel/speed-insights/astro'
+
+const { description = "", keywords = "" } = Astro.props;
+---
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/webp" href="/assets/icons/favicon.svg" />
+    <meta name="description" content={description}/>
+    <meta name="keywords" content={keywords}/>
+    <title>Classroom</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

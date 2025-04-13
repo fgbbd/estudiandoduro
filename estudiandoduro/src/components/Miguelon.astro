@@ -1,0 +1,8 @@
+---
+const { Persona, Imagen, Frase } = Astro.props;
+---
+<div id="miguelon">
+    <div id="miguelon-texto">{Persona} dice:<div id="miguelon-frase">{Frase}</div></div>
+    <img src={Imagen} alt="Imagen de Miguelón enfadado" id="miguelonImg"/>
+</div>
+<script src="/scripts/miguelon.js" defer></script>
