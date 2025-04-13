@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let games = []; // Aquí guardaremos los juegos cargados
 
     // Cargar el JSON con fetch
-    fetch("template/games.json")
+    fetch("../data/games.json")
         .then(response => response.json())
         .then(data => {
             games = data;

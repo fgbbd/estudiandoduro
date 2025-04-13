@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import GameList from "../components/GameList.astro";
+
+import "../styles/index.css"
+import '../styles/global.css'
+
+import games from '../data/games.json';
+const gameNames = games.map((g) => g.name).join(', ');
+---
+<BaseLayout>
+  <fragment slot="head">
+    <meta name="description" content={`Juega gratis a juegos sin anuncios en estudiandoduro. Juega a ${gameNames}`} />
+    <meta name="keywords" content="estudiando-duro, estudiando duro, juegos, games, unblocked, gratis"/>
+  </fragment>
+  <Header />
+  <GameList />
+  <Footer />
+  <script src="../scripts/index.js"></script>
+</BaseLayout>

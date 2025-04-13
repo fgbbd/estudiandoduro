@@ -2,13 +2,13 @@ let frasesMiguel = [];
 let frasesPilar = [];
 
 // Cargar las frases de Miguel y Pilar de manera asíncrona
-fetch("/miguel/miguel.json")
+fetch("../data/miguel.json")
     .then(res => res.json())
     .then(data => {
         frasesMiguel = data;
     });
 
-fetch("/miguel/pilar.json")
+fetch("../data/pilar.json")
     .then(res => res.json())
     .then(data => {
         frasesPilar = data;
@@ -21,8 +21,8 @@ const imagenMiguelon = document.getElementById('miguelonImg');
 // Esperar hasta que las frases estén cargadas antes de ejecutar quizasMiguelon
 let datosCargados = false;
 Promise.all([
-    fetch("/miguel/miguel.json").then(res => res.json()),
-    fetch("/miguel/pilar.json").then(res => res.json())
+    fetch("../data/miguel.json").then(res => res.json()),
+    fetch("../data/pilar.json").then(res => res.json())
 ]).then(([dataMiguel, dataPilar]) => {
     frasesMiguel = dataMiguel;
     frasesPilar = dataPilar;
@@ -52,7 +52,7 @@ function mostrarMiguelon(persona, listaElegida) {
     // Limpiar el contenido anterior y reemplazar solo el texto "Miguelon dice:"
     miguelonEnunciado.innerHTML = `${personaMostrar} dice: <div id="miguelon-frase"></div>`;
 
-    imagenMiguelon.src = `/miguel/${persona.toLowerCase()}.webp`;
+    imagenMiguelon.src = `/assets/img/${persona.toLowerCase()}.webp`;
 
     const randomElement = listaElegida[Math.floor(Math.random() * listaElegida.length)];
     const miguelonText = document.getElementById('miguelon-frase');
