@@ -1,5 +1,5 @@
 ---
-import games from '../data/games.json';
+import games from '../data/games.json'
 
 games.sort((a, b) => a.name.localeCompare(b.name, 'es', { sensitivity: 'base' }));
 ---
@@ -9,7 +9,7 @@ games.sort((a, b) => a.name.localeCompare(b.name, 'es', { sensitivity: 'base' })
       const thumbPath = `/assets/img/${game.dir}.webp`;
       const gameLink = `/game/${game.dir}`;
       return (
-        <a href={gameLink} class="game-item" id={game.dir}>
+        <a href={gameLink} class="game-item" id={game.dir} data-name={game.name}>
           <img src={thumbPath} alt={`Imagen miniatura de ${game.name}`} class="thumb" />
           <div class="game-header">
             <p>{game.name}</p>

@@ -7,7 +7,8 @@ import GameList from "../components/GameList.astro";
 import "../styles/index.css"
 import '../styles/global.css'
 
-import games from '../data/games.json';
+import games from '../data/games.json'
+
 const gameNames = games.map((g) => g.name).join(', ');
 ---
 <BaseLayout>
@@ -23,9 +24,7 @@ const gameNames = games.map((g) => g.name).join(', ');
       const input = document.getElementById("buscador");
       const noMatch = document.getElementById("no-match");
       const footer = document.getElementById("footer");
-      const games = document.querySelectorAll("#games-list > div");
-
-      if (!input || !noMatch || !footer) return;
+      const games = document.querySelectorAll("#games-list > a");
 
       input.addEventListener("input", () => {
         const query = input.value.toLowerCase().trim();
