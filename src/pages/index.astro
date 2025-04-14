@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import GameList from "../components/GameList.astro";
+import Miguelon from "../components/Miguelon.astro";
 
 import "../styles/index.css"
 import '../styles/global.css'
@@ -10,6 +11,7 @@ import '../styles/global.css'
 import games from '../data/games.json'
 
 const gameNames = games.map((g) => g.name).join(', ');
+const gamesString = JSON.stringify(games);
 ---
 <BaseLayout>
   <fragment slot="head">
@@ -19,27 +21,8 @@ const gameNames = games.map((g) => g.name).join(', ');
   <Header />
   <GameList />
   <Footer />
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const input = document.getElementById("buscador");
-      const noMatch = document.getElementById("no-match");
-      const footer = document.getElementById("footer");
-      const games = document.querySelectorAll("#games-list > a");
-
-      input.addEventListener("input", () => {
-        const query = input.value.toLowerCase().trim();
-        let found = false;
-
-        games.forEach(game => {
-          const name = game.dataset.name?.toLowerCase() || "";
-          const match = name.includes(query);
-          game.style.display = match ? "block" : "none";
-          if (match) found = true;
-        });
-
-        noMatch.style.display = found ? "none" : "block";
-        footer.style.display = found ? "flex" : "none";
-      });
-    });
-  </script>
+  <!-- Sends the games json to the frontend -->
+  <script type="application/json" id="games-data" set:html={JSON.stringify(games)}></script>
+  <script src="/scripts/index.js" is:inline></script>
+  <Miguelon />
 </BaseLayout>

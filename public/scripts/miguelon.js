@@ -33,16 +33,16 @@ setInterval(() => {
     if (datosCargados) {
         quizasMiguelon();
     }
-}, 65 * 1000);
+}, 5 * 1000);
 
 function quizasMiguelon() {
     const persona = Math.random() < 0.5 ? 'Miguel' : 'Pilar';
     const listaElegida = persona === 'Miguel' ? frasesMiguel : frasesPilar;
-    const numero = Math.floor(Math.random() * 3);
+    const numero = Math.floor(Math.random() * 1);
 
-    if (numero === 1) {
+    if (numero === 0) {
         mostrarMiguelon(persona, listaElegida);
-        setTimeout(quitarMiguelon, 12 * 1000);
+        setTimeout(quitarMiguelon, 4 * 1000);
     }
 }
 
