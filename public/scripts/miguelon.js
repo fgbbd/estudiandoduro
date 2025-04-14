@@ -40,7 +40,7 @@ function quizasMiguelon() {
     const listaElegida = persona === 'Miguel' ? frasesMiguel : frasesPilar;
     const numero = Math.floor(Math.random() * 3);
 
-    if (numero === 0) {
+    if (numero === 1) {
         mostrarMiguelon(persona, listaElegida);
         setTimeout(quitarMiguelon, 12 * 1000);
     }
