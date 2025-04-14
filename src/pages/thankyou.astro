@@ -19,7 +19,7 @@ import SpeedInsights from '@vercel/speed-insights/astro'
         <h1>Gracias por completar el formulario. Serás reedirigido en breve. </h1>
         <img src="/assets/icons/check.svg" alt="Icono de un check azul." width="300px" height="300px" style="display: inline-block;">
     </header>
-    <script src="/index.js"></script>
+    <script src="/index.js" is:inline></script>
     <script>
         async function getUltimoIssue(owner, repo) {
             const url = `https://api.github.com/repos/${owner}/${repo}/issues?per_page=1&sort=created&direction=desc`;
