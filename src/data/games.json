@@ -272,5 +272,11 @@
         "dir": "infiltrating_airship",
         "url": "https://infiltrating-the-airship.game-files.crazygames.com/ruffle/infiltrating-the-airship/2/infiltrating_the_airship.html?v=1.328",
         "type": 1
+    },
+    {
+        "name": "Gswitch 3",
+        "dir": "gswitch3",
+        "url": "https://webglmath.github.io/gswitch/",
+        "type": 2
     }
 ]
