@@ -695,7 +695,7 @@
 		}
 
 		function p(e, t) {
-			document.cookie = e + "=" + t + "; path=/; samesite=none; secure; max-age=15552000; domain=" + l
+			// document.cookie = e + "=" + t + "; path=/; samesite=none; secure; max-age=15552000; domain=" + l
 		}
 		l.endsWith("poki-gdn.com") && (l = "poki-gdn.com");
 		var h = function(e, t, i, n) {

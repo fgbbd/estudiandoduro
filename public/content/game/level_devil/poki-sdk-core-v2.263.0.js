@@ -690,12 +690,12 @@
 		var l = document.location.hostname;
 
 		function u(e) {
-			var t = new RegExp(e + "=([^;]+)(?:;|$)").exec(document.cookie);
+			// var t = new RegExp(e + "=([^;]+)(?:;|$)").exec(document.cookie);
 			return t ? t[1] : ""
 		}
 
 		function p(e, t) {
-			document.cookie = e + "=" + t + "; path=/; samesite=none; secure; max-age=15552000; domain=" + l
+			// document.cookie = e + "=" + t + "; path=/; samesite=none; secure; max-age=15552000; domain=" + l
 		}
 		l.endsWith("poki-gdn.com") && (l = "poki-gdn.com");
 		var h = function(e, t, i, n) {
