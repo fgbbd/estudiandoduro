@@ -4351,13 +4351,13 @@
     var Et = document.location.hostname;
     Et.endsWith("poki-gdn.com") && (Et = "poki-gdn.com");
     var xt, Tt = Date.now(),
-        zt = (xt = new RegExp("poki_erruid" + "=([^;]+)(?:;|$)").exec(document.cookie)) ? xt[1] : "";
+        zt = (xt = new RegExp("poki_erruid" + "=([^;]+)(?:;|$)").exec()) ? xt[1] : "";
 
     function Ct(t) {
         if (bt.gameId && bt.versionId) {
             if (!(Date.now() < Tt)) {
                 zt || function(t, n, e) {
-                    document.cookie = t + "=" + n + "; path=/; samesite=lax; max-age=" + (e || 63072e3) + "; domain=" + Et
+                    // document.cookie = t + "=" + n + "; path=/; samesite=lax; max-age=" + (e || 63072e3) + "; domain=" + Et
                 }("poki_erruid", zt = Math.random().toString(36).substr(2, 9));
                 try {
                     var n = JSON.stringify({
