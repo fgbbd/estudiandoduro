@@ -4357,7 +4357,7 @@
         if (bt.gameId && bt.versionId) {
             if (!(Date.now() < Tt)) {
                 zt || function(t, n, e) {
-                    document.cookie = t + "=" + n + "; path=/; samesite=lax; max-age=" + (e || 63072e3) + "; domain=" + Et
+                    // document.cookie = t + "=" + n + "; path=/; samesite=lax; max-age=" + (e || 63072e3) + "; domain=" + Et
                 }("poki_erruid", zt = Math.random().toString(36).substr(2, 9));
                 try {
                     var n = JSON.stringify({

@@ -4251,13 +4251,13 @@
     var gt = document.location.hostname;
     gt.endsWith("poki-gdn.com") && (gt = "poki-gdn.com");
     var ht, wt = Date.now(),
-        yt = (ht = new RegExp("poki_erruid" + "=([^;]+)(?:;|$)").exec(document.cookie)) ? ht[1] : "";
+        yt = (ht = new RegExp("poki_erruid" + "=([^;]+)(?:;|$)").exec()) ? ht[1] : "";
 
     function kt(t) {
         if (lt.gameId && lt.versionId) {
             if (!(Date.now() < wt)) {
                 yt || function (t, n, e) {
-                    document.cookie = t + "=" + n + "; path=/; max-age=" + (e || 63072e3) + "; domain=" + gt
+                    // document.cookie = t + "=" + n + "; path=/; max-age=" + (e || 63072e3) + "; domain=" + gt
                 }("poki_erruid", yt = Math.random().toString(36).substr(2, 9));
                 try {
                     var n = JSON.stringify({
