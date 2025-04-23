@@ -9,6 +9,7 @@ def pr():
     data = request.get_json()
     frase = data['frase']
 
+    
 
 
 
