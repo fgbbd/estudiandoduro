@@ -1,13 +1,18 @@
-body {
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+@import "tailwindcss";
+
+@theme {
+    --font-primary: 'Montserrat';
+    --font-header: 'Bungee'
 }
 
-h1 {
-    text-align: center;
-    text-decoration: underline;
-    font-family: 'Bungee', sans-serif;
-    word-spacing: .3em;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat.ttf');
+}
+
+@font-face {
+    font-family: 'Bungee';
+    src: url('/fonts/Bungee.ttf');
 }
 
 #footer {
