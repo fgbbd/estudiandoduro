@@ -1,3 +1,6 @@
+window.focus();
+document.body.focus();
+
 var moduleOverrides = {};
 var key;
 for (key in Module) {
