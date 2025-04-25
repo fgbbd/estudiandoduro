@@ -164,9 +164,9 @@ def download_images(game_url, dir_name):
             print(f"❌ Error al descargar {url}: {e}")
 
 if __name__ == "__main__":
-    input_url = 'https://infiltrating-the-airship.game-files.crazygames.com/ruffle/infiltrating-the-airship/2/infiltrating_the_airship.html?v=1.328'
-    dir_name = 'infiltrating_airship'
+    input_url = 'https://unblocked-2025.github.io/action-games/sm64/'
+    dir_name = 'super_mario64'
     # download_images(input_url, dir_name)
-    # download_assets(input_url, os.path.join('game', dir_name))
-    download_file('https://files.crazygames.com/infiltrating-the-airship/2/infiltrating_the_airship.swf', dir_name, input_url)
+    download_assets(input_url, os.path.join('game', dir_name))
+    # download_file('https://files.crazygames.com/infiltrating-the-airship/2/infiltrating_the_airship.swf', dir_name, input_url)
     # build_data('WebGL.json', input_url, f'game/{dir_name}')

@@ -278,5 +278,11 @@
         "dir": "gswitch3",
         "url": "https://webglmath.github.io/gswitch/",
         "type": 2
+    },
+    {
+        "name": "Super Mario 64",
+        "dir": "super_mario64",
+        "url": "https://unblocked-2025.github.io/action-games/sm64/",
+        "type": 1
     }
 ]
