@@ -3,7 +3,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import GameList from "../components/GameList.astro";
-import Miguelon from "../components/Miguelon.astro";
 
 import "../styles/index.css"
 import '../styles/global.css'
@@ -24,5 +23,4 @@ const gamesString = JSON.stringify(games);
   <!-- Sends the games json to the frontend -->
   <script type="application/json" id="games-data" set:html={JSON.stringify(games)}></script>
   <script src="/scripts/index.js" is:inline></script>
-  <Miguelon />
 </BaseLayout>
