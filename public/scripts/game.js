@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Fullscreen
     fullscreenButton.addEventListener("click", () => {
-        const gameContainer = document.getElementById('game');
+        const gameContainer = document.getElementById("game-container");
 
         if (!document.fullscreenElement) {
             if (gameContainer.requestFullscreen) {
