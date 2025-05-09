@@ -290,5 +290,11 @@
         "dir": "longcat",
         "url": "https://game.enjoy4fun.com/longcat/v1/index.html",
         "type": 1
+    },
+    {
+        "name": "Hockey Stars",
+        "dir": "hockey_stars",
+        "url": "https://0b4375ed-6118-4380-90cc-7e0d07fbe968.poki-gdn.com/d9f09c47-2870-4b14-8233-779eb974f17c/index.html",
+        "type": 1
     }
 ]
