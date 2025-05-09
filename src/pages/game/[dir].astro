@@ -27,7 +27,7 @@ if (!game) throw new Error("Juego no encontrado");
   <GameHeader name={game.name}/>
   <main id="game-container" aria-hidden="true">
     {game.type === 1 && (
-      <iframe src={`/content/game/${game.dir}/index.html`} width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+      <iframe src={`https://storage.googleapis.com/estudiandoduro/${game.dir}/index.html`} width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
     )}
     {game.type === 2 && (
       <iframe src={game.url} width="100%" height="600px" frameborder="0" scrolling="no"></iframe>

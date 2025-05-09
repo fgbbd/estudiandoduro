@@ -284,5 +284,11 @@
         "dir": "super_mario64",
         "url": "https://unblocked-2025.github.io/action-games/sm64/",
         "type": 1
+    },
+    {
+        "name": "Longcat",
+        "dir": "longcat",
+        "url": "https://game.enjoy4fun.com/longcat/v1/index.html",
+        "type": 1
     }
 ]
