@@ -308,5 +308,11 @@
         "dir": "tunnel_rush",
         "url": "https://watchdocumentaries.com/wp-content/uploads/games/color-tunnel/index.html",
         "type": 1
+    },
+    {
+        "name": "Simply Up",
+        "dir": "simplyup",
+        "url": "https://simplyup.io",
+        "type": 1
     }
 ]
