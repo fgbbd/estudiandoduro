@@ -13,10 +13,6 @@ const gameNames = games.map((g) => g.name).join(', ');
 const gamesString = JSON.stringify(games);
 ---
 <BaseLayout>
-  <fragment slot="head">
-    <meta name="description" content={`Juega gratis a juegos sin anuncios en estudiandoduro. Juega a ${gameNames}`} />
-    <meta name="keywords" content="estudiando-duro, estudiando duro, juegos, games, unblocked, gratis"/>
-  </fragment>
   <Header />
   <GameList />
   <Footer />

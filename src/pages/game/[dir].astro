@@ -20,10 +20,6 @@ const game = games.find((g) => g.dir === dir);
 if (!game) throw new Error("Juego no encontrado");
 ---
 <BaseLayout>
-  <fragment slot="head">
-    <meta name="description" content={`Juega ${game.name} gratis desbloqueado en estudiandoduro. Juega gratis a este y muchos más juegos gratis y sin anuncios. `} />
-    <meta name="keywords" content={`${game.name}, gratis, desbloqueado, juego, estudiandoduro`}/>
-  </fragment>
   <GameHeader name={game.name}/>
   <main id="game-container" aria-hidden="true">
     {game.type === 1 && (

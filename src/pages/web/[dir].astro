@@ -22,10 +22,6 @@ const web = webs.find((g) => g.dir === dir);
 if (!web) throw new Error("Juego no encontrado");
 ---
 <BaseLayout>
-  <fragment slot="head">
-    <meta name="description" content={`Juega ${web.name} gratis desbloqueado en estudiandoduro. Juega gratis a este y muchos más juegos gratis y sin anuncios. `} />
-    <meta name="keywords" content={`${web.name}, gratis, desbloqueado, juego, estudiandoduro`}/>
-  </fragment>
   <WebHeader name={web.name} link={web.url}/>
   <main id="game-container" aria-hidden="true">
     <iframe src={web.url} width="100%" height="600px" frameborder="0"></iframe>
