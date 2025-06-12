@@ -314,5 +314,17 @@
         "dir": "simplyup",
         "url": "https://simplyup.io",
         "type": 1
+    },
+    {
+        "name": "Smash Karts",
+        "dir": "smash_carts",
+        "url": "https://smashkartsonline.github.io/",
+        "type": 1
+    },
+    {
+        "name": "Tras la Cámara de la Verdad",
+        "dir": "tras_la_camara_de_la_verdad",
+        "url": "https://scratch.mit.edu/projects/1162159158/embed",
+        "type": 2
     }
 ]
